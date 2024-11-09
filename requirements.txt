@@ -1,0 +1,7 @@
+yfinance
+pandas 
+matplotlib.pyplot
+seaborn
+unittest
+mplfinance
+statsmodel
