@@ -1,9 +1,11 @@
 # src/exploratory_data_analysis.py
+import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import logging
 import os
 import pandas as pd
+import math
 from statsmodels.tsa.seasonal import seasonal_decompose
 import mplfinance as mpf
 
@@ -18,8 +20,9 @@ logging.basicConfig(
 )
 
 class ExploratoryDataAnalysis:
-    def __init__(self, data):
+    def __init__(self, data, data_folder='../data/cleaned'):
         self.data = data
+        self.data_folder = data_folder
         sns.set_palette('viridis')  # Set the color palette to viridis
         sns.set_style("whitegrid")  # Set the background style
 
@@ -130,7 +133,7 @@ class ExploratoryDataAnalysis:
             mpf.plot(df, type='candle', volume=False, title=f'{ticker} Candlestick Chart',
                      style='charles', ylabel='Price', figsize=(12, 6))
 
-    def detect_outliers(self):
+    def detect_outlier(self):
         """Detect outliers based on daily returns."""
         for ticker, df in self.data.items():
             plt.figure(figsize=(12, 6))
@@ -139,8 +142,82 @@ class ExploratoryDataAnalysis:
             plt.xlabel('Daily Return', fontsize=14)
             plt.grid(True)
             plt.tight_layout()  # Adjust layout
-            plt.show()
-            
+            plt.show()   
+             
+    def detect_outliers(self, data, method="iqr", z_threshold=3):
+        """Detects outliers in the data using either the IQR or Z-score method."""
+        outliers = pd.DataFrame(index=data.index)
+
+        for col in ["Open", "High", "Low", "Close", "Adj Close", "Volume"]:
+            if col in data.columns:
+                if method == "z_score":
+                    z_scores = np.abs((data[col] - data[col].mean()) / data[col].std())
+                    outliers[col] = z_scores > z_threshold
+                elif method == "iqr":
+                    Q1 = data[col].quantile(0.25)
+                    Q3 = data[col].quantile(0.75)
+                    IQR = Q3 - Q1
+                    outliers[col] = (data[col] < (Q1 - 1.5 * IQR)) | (data[col] > (Q3 + 1.5 * IQR))
+        
+        return outliers
+
+    def handle_outliers(self, df, outliers):
+        """Handle outliers by replacing them with NaN and then interpolating."""
+        cleaned_data = df.copy()
+        cleaned_data[outliers] = np.nan
+        cleaned_data.interpolate(method="time", inplace=True)
+        cleaned_data.bfill(inplace=True)
+        cleaned_data.ffill(inplace=True)
+        return cleaned_data
+
+    def plot_outliers(self, data, outliers, symbol):
+        """Plots time series to visualize outliers in the data."""
+        columns_with_outliers = [col for col in data.columns if col in outliers.columns and outliers[col].any()]
+
+        if not columns_with_outliers:
+            print(f"No outliers detected in any columns for {symbol}.")
+            return
+
+        num_plots = len(columns_with_outliers)
+        grid_size = math.ceil(math.sqrt(num_plots))  # Calculate grid dimensions
+
+        fig, axes = plt.subplots(grid_size, grid_size, figsize=(12 * grid_size, 4 * grid_size))
+        
+        axes = axes.flatten() if num_plots > 1 else [axes]
+
+        for i, col in enumerate(columns_with_outliers):
+            ax = axes[i]
+            ax.plot(data.index, data[col], label=col, color="skyblue")  # Time series line
+            ax.scatter(data.index[outliers[col]], data[col][outliers[col]], 
+                       color='red', s=20, label="Outliers")  # Outliers as red dots
+
+            ax.set_title(f"{col} - Time Series with Outliers of {symbol}")
+            ax.set_xlabel("Date")
+            ax.set_ylabel(col)
+            ax.legend()
+            ax.grid()
+
+        for j in range(i + 1, len(axes)):
+            axes[j].axis('off')
+
+        plt.tight_layout()
+        plt.show()
+
+    def visualize_outliers_and_cleaned_data(self):
+        """Visualize outliers and cleaned data for all relevant columns in the dataset."""
+        for symbol, df in self.data.items():
+            # Detect outliers
+            outliers = self.detect_outliers(df)
+
+            # Plot original data with outliers
+            self.plot_outliers(df, outliers, symbol)
+
+            # Handle outliers
+            cleaned_data = self.handle_outliers(df, outliers)
+
+            # Plot cleaned data with outliers (using the same method)
+            self.plot_outliers(cleaned_data, outliers, f"{symbol} (Cleaned)")
+                    
     def seasonal_decomposition(self):
         """Perform seasonal decomposition of the time series."""
         for ticker, df in self.data.items():

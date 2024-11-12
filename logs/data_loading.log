@@ -1763,3 +1763,2043 @@ Date
 2024-11-09 04:40:25,004 - INFO - The Sharpe Ratio for TSLA is -0.24
 2024-11-09 04:40:25,004 - INFO - The Sharpe Ratio for BND is -2.57
 2024-11-09 04:40:25,004 - INFO - The Sharpe Ratio for SPY is -0.94
+2024-11-11 22:41:12,451 - INFO - Loading data for TSLA from 2015-01-01 to 2024-10-31
+2024-11-11 22:41:18,393 - INFO - Data for TSLA loaded successfully.
+2024-11-11 22:41:18,393 - INFO - Loading data for BND from 2015-01-01 to 2024-10-31
+2024-11-11 22:41:19,034 - INFO - Data for BND loaded successfully.
+2024-11-11 22:41:19,034 - INFO - Loading data for SPY from 2015-01-01 to 2024-10-31
+2024-11-11 22:41:19,456 - INFO - Data for SPY loaded successfully.
+2024-11-11 22:41:21,174 - INFO - DataFrame for TSLA before saving:
+2024-11-11 22:41:21,175 - INFO -                                 Open       High        Low      Close  \
+Date                                                                    
+2015-01-02 00:00:00+00:00  14.620667  14.620667  14.883333  14.217333   
+2015-01-05 00:00:00+00:00  14.006000  14.006000  14.433333  13.810667   
+2015-01-06 00:00:00+00:00  14.085333  14.085333  14.280000  13.614000   
+2015-01-07 00:00:00+00:00  14.063333  14.063333  14.318667  13.985333   
+2015-01-08 00:00:00+00:00  14.041333  14.041333  14.253333  14.000667   
+
+                           Adj Close    Volume  
+Date                                            
+2015-01-02 00:00:00+00:00  14.858000  71466000  
+2015-01-05 00:00:00+00:00  14.303333  80527500  
+2015-01-06 00:00:00+00:00  14.004000  93928500  
+2015-01-07 00:00:00+00:00  14.223333  44526000  
+2015-01-08 00:00:00+00:00  14.187333  51637500  
+2024-11-11 22:41:21,230 - INFO - Data for TSLA saved to ../data/raw\TSLA.csv
+2024-11-11 22:41:21,240 - INFO - DataFrame for BND before saving:
+2024-11-11 22:41:21,240 - INFO -                                 Open       High        Low      Close  \
+Date                                                                    
+2015-01-02 00:00:00+00:00  63.358765  82.650002  82.690002  82.419998   
+2015-01-05 00:00:00+00:00  63.542732  82.889999  82.919998  82.699997   
+2015-01-06 00:00:00+00:00  63.726696  83.129997  83.379997  83.029999   
+2015-01-07 00:00:00+00:00  63.765038  83.180000  83.279999  83.050003   
+2015-01-08 00:00:00+00:00  63.665379  83.050003  83.110001  82.970001   
+
+                           Adj Close   Volume  
+Date                                           
+2015-01-02 00:00:00+00:00  82.430000  2218800  
+2015-01-05 00:00:00+00:00  82.739998  5820100  
+2015-01-06 00:00:00+00:00  83.029999  3887600  
+2015-01-07 00:00:00+00:00  83.139999  2433400  
+2015-01-08 00:00:00+00:00  83.110001  1873400  
+2024-11-11 22:41:21,275 - INFO - Data for BND saved to ../data/raw\BND.csv
+2024-11-11 22:41:21,279 - INFO - DataFrame for SPY before saving:
+2024-11-11 22:41:21,279 - INFO -                                  Open        High         Low       Close  \
+Date                                                                        
+2015-01-02 00:00:00+00:00  173.173721  205.429993  206.880005  204.179993   
+2015-01-05 00:00:00+00:00  170.046265  201.720001  204.369995  201.350006   
+2015-01-06 00:00:00+00:00  168.444611  199.820007  202.720001  198.860001   
+2015-01-07 00:00:00+00:00  170.543655  202.309998  202.720001  200.880005   
+2015-01-08 00:00:00+00:00  173.569992  205.899994  206.160004  203.990005   
+
+                            Adj Close     Volume  
+Date                                              
+2015-01-02 00:00:00+00:00  206.380005  121465900  
+2015-01-05 00:00:00+00:00  204.169998  169632600  
+2015-01-06 00:00:00+00:00  202.089996  209151400  
+2015-01-07 00:00:00+00:00  201.419998  125346700  
+2015-01-08 00:00:00+00:00  204.009995  147217800  
+2024-11-11 22:41:21,319 - INFO - Data for SPY saved to ../data/raw\SPY.csv
+2024-11-11 22:41:29,662 - INFO - Checking missing values for TSLA
+2024-11-11 22:41:29,662 - INFO - Missing values for TSLA: Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+2024-11-11 22:41:29,672 - INFO - Checking missing values for BND
+2024-11-11 22:41:29,672 - INFO - Missing values for BND: Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+2024-11-11 22:41:29,672 - INFO - Checking missing values for SPY
+2024-11-11 22:41:29,672 - INFO - Missing values for SPY: Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+2024-11-11 22:41:29,672 - INFO - Data cleaning completed.
+2024-11-11 22:45:36,296 - INFO - Loading data for TSLA from 2015-01-01 to 2024-10-31
+2024-11-11 22:45:36,358 - INFO - Data for TSLA loaded successfully.
+2024-11-11 22:45:36,358 - INFO - Loading data for BND from 2015-01-01 to 2024-10-31
+2024-11-11 22:45:36,462 - INFO - Data for BND loaded successfully.
+2024-11-11 22:45:36,462 - INFO - Loading data for SPY from 2015-01-01 to 2024-10-31
+2024-11-11 22:45:36,500 - INFO - Data for SPY loaded successfully.
+2024-11-11 22:45:37,356 - INFO - DataFrame for TSLA before saving:
+2024-11-11 22:45:37,356 - INFO -                                 Open       High        Low      Close  \
+Date                                                                    
+2015-01-02 00:00:00+00:00  14.620667  14.620667  14.883333  14.217333   
+2015-01-05 00:00:00+00:00  14.006000  14.006000  14.433333  13.810667   
+2015-01-06 00:00:00+00:00  14.085333  14.085333  14.280000  13.614000   
+2015-01-07 00:00:00+00:00  14.063333  14.063333  14.318667  13.985333   
+2015-01-08 00:00:00+00:00  14.041333  14.041333  14.253333  14.000667   
+
+                           Adj Close    Volume  
+Date                                            
+2015-01-02 00:00:00+00:00  14.858000  71466000  
+2015-01-05 00:00:00+00:00  14.303333  80527500  
+2015-01-06 00:00:00+00:00  14.004000  93928500  
+2015-01-07 00:00:00+00:00  14.223333  44526000  
+2015-01-08 00:00:00+00:00  14.187333  51637500  
+2024-11-11 22:45:37,412 - INFO - Data for TSLA saved to ../data/raw\TSLA.csv
+2024-11-11 22:45:37,417 - INFO - DataFrame for BND before saving:
+2024-11-11 22:45:37,418 - INFO -                                 Open       High        Low      Close  \
+Date                                                                    
+2015-01-02 00:00:00+00:00  63.358765  82.650002  82.690002  82.419998   
+2015-01-05 00:00:00+00:00  63.542732  82.889999  82.919998  82.699997   
+2015-01-06 00:00:00+00:00  63.726696  83.129997  83.379997  83.029999   
+2015-01-07 00:00:00+00:00  63.765038  83.180000  83.279999  83.050003   
+2015-01-08 00:00:00+00:00  63.665379  83.050003  83.110001  82.970001   
+
+                           Adj Close   Volume  
+Date                                           
+2015-01-02 00:00:00+00:00  82.430000  2218800  
+2015-01-05 00:00:00+00:00  82.739998  5820100  
+2015-01-06 00:00:00+00:00  83.029999  3887600  
+2015-01-07 00:00:00+00:00  83.139999  2433400  
+2015-01-08 00:00:00+00:00  83.110001  1873400  
+2024-11-11 22:45:37,446 - INFO - Data for BND saved to ../data/raw\BND.csv
+2024-11-11 22:45:37,458 - INFO - DataFrame for SPY before saving:
+2024-11-11 22:45:37,459 - INFO -                                  Open        High         Low       Close  \
+Date                                                                        
+2015-01-02 00:00:00+00:00  173.173721  205.429993  206.880005  204.179993   
+2015-01-05 00:00:00+00:00  170.046265  201.720001  204.369995  201.350006   
+2015-01-06 00:00:00+00:00  168.444611  199.820007  202.720001  198.860001   
+2015-01-07 00:00:00+00:00  170.543655  202.309998  202.720001  200.880005   
+2015-01-08 00:00:00+00:00  173.569992  205.899994  206.160004  203.990005   
+
+                            Adj Close     Volume  
+Date                                              
+2015-01-02 00:00:00+00:00  206.380005  121465900  
+2015-01-05 00:00:00+00:00  204.169998  169632600  
+2015-01-06 00:00:00+00:00  202.089996  209151400  
+2015-01-07 00:00:00+00:00  201.419998  125346700  
+2015-01-08 00:00:00+00:00  204.009995  147217800  
+2024-11-11 22:45:37,497 - INFO - Data for SPY saved to ../data/raw\SPY.csv
+2024-11-11 22:45:38,620 - INFO - Checking missing values for TSLA
+2024-11-11 22:45:38,620 - INFO - Missing values for TSLA: Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+2024-11-11 22:45:38,620 - INFO - Checking missing values for BND
+2024-11-11 22:45:38,626 - INFO - Missing values for BND: Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+2024-11-11 22:45:38,628 - INFO - Checking missing values for SPY
+2024-11-11 22:45:38,629 - INFO - Missing values for SPY: Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+2024-11-11 22:45:38,632 - INFO - Data cleaning completed.
+2024-11-11 22:47:59,367 - INFO - Loading data for TSLA from 2015-01-01 to 2024-10-31
+2024-11-11 22:47:59,417 - INFO - Data for TSLA loaded successfully.
+2024-11-11 22:47:59,417 - INFO - Loading data for BND from 2015-01-01 to 2024-10-31
+2024-11-11 22:47:59,460 - INFO - Data for BND loaded successfully.
+2024-11-11 22:47:59,460 - INFO - Loading data for SPY from 2015-01-01 to 2024-10-31
+2024-11-11 22:47:59,511 - INFO - Data for SPY loaded successfully.
+2024-11-11 22:48:00,417 - INFO - DataFrame for TSLA before saving:
+2024-11-11 22:48:00,417 - INFO -                                 Open       High        Low      Close  \
+Date                                                                    
+2015-01-02 00:00:00+00:00  14.620667  14.620667  14.883333  14.217333   
+2015-01-05 00:00:00+00:00  14.006000  14.006000  14.433333  13.810667   
+2015-01-06 00:00:00+00:00  14.085333  14.085333  14.280000  13.614000   
+2015-01-07 00:00:00+00:00  14.063333  14.063333  14.318667  13.985333   
+2015-01-08 00:00:00+00:00  14.041333  14.041333  14.253333  14.000667   
+
+                           Adj Close    Volume  
+Date                                            
+2015-01-02 00:00:00+00:00  14.858000  71466000  
+2015-01-05 00:00:00+00:00  14.303333  80527500  
+2015-01-06 00:00:00+00:00  14.004000  93928500  
+2015-01-07 00:00:00+00:00  14.223333  44526000  
+2015-01-08 00:00:00+00:00  14.187333  51637500  
+2024-11-11 22:48:00,460 - INFO - Data for TSLA saved to ../data/raw\TSLA.csv
+2024-11-11 22:48:00,465 - INFO - DataFrame for BND before saving:
+2024-11-11 22:48:00,465 - INFO -                                 Open       High        Low      Close  \
+Date                                                                    
+2015-01-02 00:00:00+00:00  63.358765  82.650002  82.690002  82.419998   
+2015-01-05 00:00:00+00:00  63.542732  82.889999  82.919998  82.699997   
+2015-01-06 00:00:00+00:00  63.726696  83.129997  83.379997  83.029999   
+2015-01-07 00:00:00+00:00  63.765038  83.180000  83.279999  83.050003   
+2015-01-08 00:00:00+00:00  63.665379  83.050003  83.110001  82.970001   
+
+                           Adj Close   Volume  
+Date                                           
+2015-01-02 00:00:00+00:00  82.430000  2218800  
+2015-01-05 00:00:00+00:00  82.739998  5820100  
+2015-01-06 00:00:00+00:00  83.029999  3887600  
+2015-01-07 00:00:00+00:00  83.139999  2433400  
+2015-01-08 00:00:00+00:00  83.110001  1873400  
+2024-11-11 22:48:00,503 - INFO - Data for BND saved to ../data/raw\BND.csv
+2024-11-11 22:48:00,503 - INFO - DataFrame for SPY before saving:
+2024-11-11 22:48:00,503 - INFO -                                  Open        High         Low       Close  \
+Date                                                                        
+2015-01-02 00:00:00+00:00  173.173721  205.429993  206.880005  204.179993   
+2015-01-05 00:00:00+00:00  170.046265  201.720001  204.369995  201.350006   
+2015-01-06 00:00:00+00:00  168.444611  199.820007  202.720001  198.860001   
+2015-01-07 00:00:00+00:00  170.543655  202.309998  202.720001  200.880005   
+2015-01-08 00:00:00+00:00  173.569992  205.899994  206.160004  203.990005   
+
+                            Adj Close     Volume  
+Date                                              
+2015-01-02 00:00:00+00:00  206.380005  121465900  
+2015-01-05 00:00:00+00:00  204.169998  169632600  
+2015-01-06 00:00:00+00:00  202.089996  209151400  
+2015-01-07 00:00:00+00:00  201.419998  125346700  
+2015-01-08 00:00:00+00:00  204.009995  147217800  
+2024-11-11 22:48:00,543 - INFO - Data for SPY saved to ../data/raw\SPY.csv
+2024-11-11 22:48:01,339 - INFO - Checking missing values for TSLA
+2024-11-11 22:48:01,339 - INFO - Missing values for TSLA: Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+2024-11-11 22:48:01,339 - INFO - Checking missing values for BND
+2024-11-11 22:48:01,339 - INFO - Missing values for BND: Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+2024-11-11 22:48:01,339 - INFO - Checking missing values for SPY
+2024-11-11 22:48:01,339 - INFO - Missing values for SPY: Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+2024-11-11 22:48:01,354 - INFO - Data cleaning completed.
+2024-11-11 22:49:41,775 - INFO - Loading data for TSLA from 2015-01-01 to 2024-10-31
+2024-11-11 22:49:44,771 - INFO - Data for TSLA loaded successfully.
+2024-11-11 22:49:44,771 - INFO - Loading data for BND from 2015-01-01 to 2024-10-31
+2024-11-11 22:49:46,684 - INFO - Data for BND loaded successfully.
+2024-11-11 22:49:46,684 - INFO - Loading data for SPY from 2015-01-01 to 2024-10-31
+2024-11-11 22:49:47,558 - INFO - Data for SPY loaded successfully.
+2024-11-11 22:49:52,784 - INFO - DataFrame for TSLA before saving:
+2024-11-11 22:49:52,784 - INFO -                                 Open       High        Low      Close  \
+Date                                                                    
+2015-01-02 00:00:00+00:00  14.620667  14.620667  14.883333  14.217333   
+2015-01-05 00:00:00+00:00  14.006000  14.006000  14.433333  13.810667   
+2015-01-06 00:00:00+00:00  14.085333  14.085333  14.280000  13.614000   
+2015-01-07 00:00:00+00:00  14.063333  14.063333  14.318667  13.985333   
+2015-01-08 00:00:00+00:00  14.041333  14.041333  14.253333  14.000667   
+
+                           Adj Close    Volume  
+Date                                            
+2015-01-02 00:00:00+00:00  14.858000  71466000  
+2015-01-05 00:00:00+00:00  14.303333  80527500  
+2015-01-06 00:00:00+00:00  14.004000  93928500  
+2015-01-07 00:00:00+00:00  14.223333  44526000  
+2015-01-08 00:00:00+00:00  14.187333  51637500  
+2024-11-11 22:49:52,850 - INFO - Data for TSLA saved to ../data/raw\TSLA.csv
+2024-11-11 22:49:52,850 - INFO - DataFrame for BND before saving:
+2024-11-11 22:49:52,850 - INFO -                                 Open       High        Low      Close  \
+Date                                                                    
+2015-01-02 00:00:00+00:00  63.358761  82.650002  82.690002  82.419998   
+2015-01-05 00:00:00+00:00  63.542728  82.889999  82.919998  82.699997   
+2015-01-06 00:00:00+00:00  63.726715  83.129997  83.379997  83.029999   
+2015-01-07 00:00:00+00:00  63.765026  83.180000  83.279999  83.050003   
+2015-01-08 00:00:00+00:00  63.665409  83.050003  83.110001  82.970001   
+
+                           Adj Close   Volume  
+Date                                           
+2015-01-02 00:00:00+00:00  82.430000  2218800  
+2015-01-05 00:00:00+00:00  82.739998  5820100  
+2015-01-06 00:00:00+00:00  83.029999  3887600  
+2015-01-07 00:00:00+00:00  83.139999  2433400  
+2015-01-08 00:00:00+00:00  83.110001  1873400  
+2024-11-11 22:49:52,900 - INFO - Data for BND saved to ../data/raw\BND.csv
+2024-11-11 22:49:52,916 - INFO - DataFrame for SPY before saving:
+2024-11-11 22:49:52,916 - INFO -                                  Open        High         Low       Close  \
+Date                                                                        
+2015-01-02 00:00:00+00:00  173.173798  205.429993  206.880005  204.179993   
+2015-01-05 00:00:00+00:00  170.046341  201.720001  204.369995  201.350006   
+2015-01-06 00:00:00+00:00  168.444672  199.820007  202.720001  198.860001   
+2015-01-07 00:00:00+00:00  170.543640  202.309998  202.720001  200.880005   
+2015-01-08 00:00:00+00:00  173.569946  205.899994  206.160004  203.990005   
+
+                            Adj Close     Volume  
+Date                                              
+2015-01-02 00:00:00+00:00  206.380005  121465900  
+2015-01-05 00:00:00+00:00  204.169998  169632600  
+2015-01-06 00:00:00+00:00  202.089996  209151400  
+2015-01-07 00:00:00+00:00  201.419998  125346700  
+2015-01-08 00:00:00+00:00  204.009995  147217800  
+2024-11-11 22:49:52,949 - INFO - Data for SPY saved to ../data/raw\SPY.csv
+2024-11-11 22:49:55,748 - INFO - Checking missing values for TSLA
+2024-11-11 22:49:55,749 - INFO - Missing values for TSLA: Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+2024-11-11 22:49:55,749 - INFO - Checking missing values for BND
+2024-11-11 22:49:55,749 - INFO - Missing values for BND: Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+2024-11-11 22:49:55,749 - INFO - Checking missing values for SPY
+2024-11-11 22:49:55,749 - INFO - Missing values for SPY: Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+2024-11-11 22:49:55,749 - INFO - Data cleaning completed.
+2024-11-11 22:57:58,760 - INFO - Loading data for TSLA from 2015-01-01 to 2024-10-31
+2024-11-11 22:58:01,139 - INFO - Data for TSLA loaded successfully.
+2024-11-11 22:58:01,139 - INFO - Loading data for BND from 2015-01-01 to 2024-10-31
+2024-11-11 22:58:01,525 - INFO - Data for BND loaded successfully.
+2024-11-11 22:58:01,525 - INFO - Loading data for SPY from 2015-01-01 to 2024-10-31
+2024-11-11 22:58:01,932 - INFO - Data for SPY loaded successfully.
+2024-11-11 22:58:04,351 - INFO - DataFrame for TSLA before saving:
+2024-11-11 22:58:04,351 - INFO -                                 Open       High        Low      Close  \
+Date                                                                    
+2015-01-02 00:00:00+00:00  14.620667  14.620667  14.883333  14.217333   
+2015-01-05 00:00:00+00:00  14.006000  14.006000  14.433333  13.810667   
+2015-01-06 00:00:00+00:00  14.085333  14.085333  14.280000  13.614000   
+2015-01-07 00:00:00+00:00  14.063333  14.063333  14.318667  13.985333   
+2015-01-08 00:00:00+00:00  14.041333  14.041333  14.253333  14.000667   
+
+                           Adj Close    Volume  
+Date                                            
+2015-01-02 00:00:00+00:00  14.858000  71466000  
+2015-01-05 00:00:00+00:00  14.303333  80527500  
+2015-01-06 00:00:00+00:00  14.004000  93928500  
+2015-01-07 00:00:00+00:00  14.223333  44526000  
+2015-01-08 00:00:00+00:00  14.187333  51637500  
+2024-11-11 22:58:04,393 - INFO - Data for TSLA saved to ../data/raw\TSLA.csv
+2024-11-11 22:58:04,400 - INFO - DataFrame for BND before saving:
+2024-11-11 22:58:04,400 - INFO -                                 Open       High        Low      Close  \
+Date                                                                    
+2015-01-02 00:00:00+00:00  63.358757  82.650002  82.690002  82.419998   
+2015-01-05 00:00:00+00:00  63.542747  82.889999  82.919998  82.699997   
+2015-01-06 00:00:00+00:00  63.726734  83.129997  83.379997  83.029999   
+2015-01-07 00:00:00+00:00  63.765072  83.180000  83.279999  83.050003   
+2015-01-08 00:00:00+00:00  63.665371  83.050003  83.110001  82.970001   
+
+                           Adj Close   Volume  
+Date                                           
+2015-01-02 00:00:00+00:00  82.430000  2218800  
+2015-01-05 00:00:00+00:00  82.739998  5820100  
+2015-01-06 00:00:00+00:00  83.029999  3887600  
+2015-01-07 00:00:00+00:00  83.139999  2433400  
+2015-01-08 00:00:00+00:00  83.110001  1873400  
+2024-11-11 22:58:04,440 - INFO - Data for BND saved to ../data/raw\BND.csv
+2024-11-11 22:58:04,446 - INFO - DataFrame for SPY before saving:
+2024-11-11 22:58:04,446 - INFO -                                  Open        High         Low       Close  \
+Date                                                                        
+2015-01-02 00:00:00+00:00  173.173782  205.429993  206.880005  204.179993   
+2015-01-05 00:00:00+00:00  170.046326  201.720001  204.369995  201.350006   
+2015-01-06 00:00:00+00:00  168.444656  199.820007  202.720001  198.860001   
+2015-01-07 00:00:00+00:00  170.543701  202.309998  202.720001  200.880005   
+2015-01-08 00:00:00+00:00  173.569946  205.899994  206.160004  203.990005   
+
+                            Adj Close     Volume  
+Date                                              
+2015-01-02 00:00:00+00:00  206.380005  121465900  
+2015-01-05 00:00:00+00:00  204.169998  169632600  
+2015-01-06 00:00:00+00:00  202.089996  209151400  
+2015-01-07 00:00:00+00:00  201.419998  125346700  
+2015-01-08 00:00:00+00:00  204.009995  147217800  
+2024-11-11 22:58:04,477 - INFO - Data for SPY saved to ../data/raw\SPY.csv
+2024-11-11 22:58:07,897 - INFO - Checking missing values for TSLA
+2024-11-11 22:58:07,898 - INFO - Missing values for TSLA: Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+2024-11-11 22:58:07,899 - INFO - Checking missing values for BND
+2024-11-11 22:58:07,899 - INFO - Missing values for BND: Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+2024-11-11 22:58:07,899 - INFO - Checking missing values for SPY
+2024-11-11 22:58:07,899 - INFO - Missing values for SPY: Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+2024-11-11 22:58:07,899 - INFO - Data cleaning completed.
+2024-11-11 22:59:07,697 - INFO - Outliers detected for TSLA using iqr.
+2024-11-11 22:59:07,710 - INFO - Outliers detected for BND using iqr.
+2024-11-11 22:59:07,717 - INFO - Outliers detected for SPY using iqr.
+2024-11-11 22:59:45,859 - INFO - Outliers detected for TSLA using iqr.
+2024-11-11 22:59:45,877 - INFO - Outliers detected for BND using iqr.
+2024-11-11 22:59:45,881 - INFO - Outliers detected for SPY using iqr.
+2024-11-11 22:59:46,193 - INFO - Outliers handled for TSLA by setting to NaN and filling with interpolation.
+2024-11-11 22:59:46,193 - INFO - Outliers handled for BND by setting to NaN and filling with interpolation.
+2024-11-11 22:59:46,193 - INFO - Outliers handled for SPY by setting to NaN and filling with interpolation.
+2024-11-11 22:59:46,193 - INFO - All outliers have been handled.
+2024-11-11 22:59:46,509 - INFO - Outliers detected for TSLA using iqr.
+2024-11-11 22:59:46,529 - INFO - Outliers detected for BND using iqr.
+2024-11-11 22:59:46,534 - INFO - Outliers detected for SPY using iqr.
+2024-11-11 22:59:46,827 - INFO - Outliers handled for TSLA by setting to NaN and filling with interpolation.
+2024-11-11 22:59:46,831 - INFO - Outliers handled for BND by setting to NaN and filling with interpolation.
+2024-11-11 22:59:46,835 - INFO - Outliers handled for SPY by setting to NaN and filling with interpolation.
+2024-11-11 22:59:46,835 - INFO - All outliers have been handled.
+2024-11-11 22:59:47,161 - INFO - Outliers detected for TSLA using iqr.
+2024-11-11 22:59:47,161 - INFO - Outliers detected for BND using iqr.
+2024-11-11 22:59:47,179 - INFO - Outliers detected for SPY using iqr.
+2024-11-11 22:59:47,532 - INFO - Outliers handled for TSLA by setting to NaN and filling with interpolation.
+2024-11-11 22:59:47,536 - INFO - Outliers handled for BND by setting to NaN and filling with interpolation.
+2024-11-11 22:59:47,539 - INFO - Outliers handled for SPY by setting to NaN and filling with interpolation.
+2024-11-11 22:59:47,540 - INFO - All outliers have been handled.
+2024-11-11 23:00:48,144 - INFO - Outliers detected for TSLA using z_score.
+2024-11-11 23:00:48,151 - INFO - Outliers detected for BND using z_score.
+2024-11-11 23:00:48,157 - INFO - Outliers detected for SPY using z_score.
+2024-11-11 23:00:48,556 - INFO - Outliers handled for TSLA by setting to NaN and filling with interpolation.
+2024-11-11 23:00:48,556 - INFO - Outliers handled for BND by setting to NaN and filling with interpolation.
+2024-11-11 23:00:48,556 - INFO - Outliers handled for SPY by setting to NaN and filling with interpolation.
+2024-11-11 23:00:48,556 - INFO - All outliers have been handled.
+2024-11-11 23:00:48,917 - INFO - Outliers detected for TSLA using z_score.
+2024-11-11 23:00:48,921 - INFO - Outliers detected for BND using z_score.
+2024-11-11 23:00:48,924 - INFO - Outliers detected for SPY using z_score.
+2024-11-11 23:00:49,226 - INFO - Outliers handled for TSLA by setting to NaN and filling with interpolation.
+2024-11-11 23:00:49,231 - INFO - Outliers handled for BND by setting to NaN and filling with interpolation.
+2024-11-11 23:00:49,236 - INFO - Outliers handled for SPY by setting to NaN and filling with interpolation.
+2024-11-11 23:00:49,236 - INFO - All outliers have been handled.
+2024-11-11 23:00:49,530 - INFO - Outliers detected for TSLA using z_score.
+2024-11-11 23:00:49,533 - INFO - Outliers detected for BND using z_score.
+2024-11-11 23:00:49,536 - INFO - Outliers detected for SPY using z_score.
+2024-11-11 23:00:49,893 - INFO - Outliers handled for TSLA by setting to NaN and filling with interpolation.
+2024-11-11 23:00:49,907 - INFO - Outliers handled for BND by setting to NaN and filling with interpolation.
+2024-11-11 23:00:49,909 - INFO - Outliers handled for SPY by setting to NaN and filling with interpolation.
+2024-11-11 23:00:49,909 - INFO - All outliers have been handled.
+2024-11-11 23:02:40,704 - INFO - Loading data for TSLA from 2015-01-01 to 2024-10-31
+2024-11-11 23:02:40,755 - INFO - Data for TSLA loaded successfully.
+2024-11-11 23:02:40,755 - INFO - Loading data for BND from 2015-01-01 to 2024-10-31
+2024-11-11 23:02:40,809 - INFO - Data for BND loaded successfully.
+2024-11-11 23:02:40,809 - INFO - Loading data for SPY from 2015-01-01 to 2024-10-31
+2024-11-11 23:02:40,845 - INFO - Data for SPY loaded successfully.
+2024-11-11 23:02:43,252 - INFO - DataFrame for TSLA before saving:
+2024-11-11 23:02:43,252 - INFO -                                 Open       High        Low      Close  \
+Date                                                                    
+2015-01-02 00:00:00+00:00  14.620667  14.620667  14.883333  14.217333   
+2015-01-05 00:00:00+00:00  14.006000  14.006000  14.433333  13.810667   
+2015-01-06 00:00:00+00:00  14.085333  14.085333  14.280000  13.614000   
+2015-01-07 00:00:00+00:00  14.063333  14.063333  14.318667  13.985333   
+2015-01-08 00:00:00+00:00  14.041333  14.041333  14.253333  14.000667   
+
+                           Adj Close    Volume  
+Date                                            
+2015-01-02 00:00:00+00:00  14.858000  71466000  
+2015-01-05 00:00:00+00:00  14.303333  80527500  
+2015-01-06 00:00:00+00:00  14.004000  93928500  
+2015-01-07 00:00:00+00:00  14.223333  44526000  
+2015-01-08 00:00:00+00:00  14.187333  51637500  
+2024-11-11 23:02:43,291 - INFO - Data for TSLA saved to ../data/raw\TSLA.csv
+2024-11-11 23:02:43,297 - INFO - DataFrame for BND before saving:
+2024-11-11 23:02:43,297 - INFO -                                 Open       High        Low      Close  \
+Date                                                                    
+2015-01-02 00:00:00+00:00  63.358757  82.650002  82.690002  82.419998   
+2015-01-05 00:00:00+00:00  63.542747  82.889999  82.919998  82.699997   
+2015-01-06 00:00:00+00:00  63.726734  83.129997  83.379997  83.029999   
+2015-01-07 00:00:00+00:00  63.765072  83.180000  83.279999  83.050003   
+2015-01-08 00:00:00+00:00  63.665371  83.050003  83.110001  82.970001   
+
+                           Adj Close   Volume  
+Date                                           
+2015-01-02 00:00:00+00:00  82.430000  2218800  
+2015-01-05 00:00:00+00:00  82.739998  5820100  
+2015-01-06 00:00:00+00:00  83.029999  3887600  
+2015-01-07 00:00:00+00:00  83.139999  2433400  
+2015-01-08 00:00:00+00:00  83.110001  1873400  
+2024-11-11 23:02:43,332 - INFO - Data for BND saved to ../data/raw\BND.csv
+2024-11-11 23:02:43,337 - INFO - DataFrame for SPY before saving:
+2024-11-11 23:02:43,338 - INFO -                                  Open        High         Low       Close  \
+Date                                                                        
+2015-01-02 00:00:00+00:00  173.173782  205.429993  206.880005  204.179993   
+2015-01-05 00:00:00+00:00  170.046326  201.720001  204.369995  201.350006   
+2015-01-06 00:00:00+00:00  168.444656  199.820007  202.720001  198.860001   
+2015-01-07 00:00:00+00:00  170.543701  202.309998  202.720001  200.880005   
+2015-01-08 00:00:00+00:00  173.569946  205.899994  206.160004  203.990005   
+
+                            Adj Close     Volume  
+Date                                              
+2015-01-02 00:00:00+00:00  206.380005  121465900  
+2015-01-05 00:00:00+00:00  204.169998  169632600  
+2015-01-06 00:00:00+00:00  202.089996  209151400  
+2015-01-07 00:00:00+00:00  201.419998  125346700  
+2015-01-08 00:00:00+00:00  204.009995  147217800  
+2024-11-11 23:02:43,370 - INFO - Data for SPY saved to ../data/raw\SPY.csv
+2024-11-11 23:02:45,885 - INFO - Checking missing values for TSLA
+2024-11-11 23:02:45,886 - INFO - Missing values for TSLA: Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+2024-11-11 23:02:45,886 - INFO - Checking missing values for BND
+2024-11-11 23:02:45,886 - INFO - Missing values for BND: Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+2024-11-11 23:02:45,886 - INFO - Checking missing values for SPY
+2024-11-11 23:02:45,886 - INFO - Missing values for SPY: Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+2024-11-11 23:02:45,886 - INFO - Data cleaning completed.
+2024-11-11 23:03:21,884 - INFO - Outliers detected for TSLA using z_score.
+2024-11-11 23:03:21,889 - INFO - Outliers detected for BND using z_score.
+2024-11-11 23:03:21,893 - INFO - Outliers detected for SPY using z_score.
+2024-11-11 23:03:21,894 - INFO - No outliers detected for TSLA using z_score.
+2024-11-11 23:10:30,570 - INFO - Outliers detected for TSLA using z_score.
+2024-11-11 23:10:30,576 - INFO - Outliers detected for BND using z_score.
+2024-11-11 23:10:30,576 - INFO - Outliers detected for SPY using z_score.
+2024-11-11 23:10:30,576 - INFO - No outliers detected for TSLA using z_score.
+2024-11-11 23:12:17,315 - INFO - Loading data for TSLA from 2015-01-01 to 2024-10-31
+2024-11-11 23:12:19,047 - INFO - Data for TSLA loaded successfully.
+2024-11-11 23:12:19,047 - INFO - Loading data for BND from 2015-01-01 to 2024-10-31
+2024-11-11 23:12:19,470 - INFO - Data for BND loaded successfully.
+2024-11-11 23:12:19,470 - INFO - Loading data for SPY from 2015-01-01 to 2024-10-31
+2024-11-11 23:12:19,905 - INFO - Data for SPY loaded successfully.
+2024-11-11 23:12:20,087 - INFO - DataFrame for TSLA before saving:
+2024-11-11 23:12:20,087 - INFO -                                 Open       High        Low      Close  \
+Date                                                                    
+2015-01-02 00:00:00+00:00  14.620667  14.620667  14.883333  14.217333   
+2015-01-05 00:00:00+00:00  14.006000  14.006000  14.433333  13.810667   
+2015-01-06 00:00:00+00:00  14.085333  14.085333  14.280000  13.614000   
+2015-01-07 00:00:00+00:00  14.063333  14.063333  14.318667  13.985333   
+2015-01-08 00:00:00+00:00  14.041333  14.041333  14.253333  14.000667   
+
+                           Adj Close    Volume  
+Date                                            
+2015-01-02 00:00:00+00:00  14.858000  71466000  
+2015-01-05 00:00:00+00:00  14.303333  80527500  
+2015-01-06 00:00:00+00:00  14.004000  93928500  
+2015-01-07 00:00:00+00:00  14.223333  44526000  
+2015-01-08 00:00:00+00:00  14.187333  51637500  
+2024-11-11 23:12:20,134 - INFO - Data for TSLA saved to ../data/raw\TSLA.csv
+2024-11-11 23:12:20,140 - INFO - DataFrame for BND before saving:
+2024-11-11 23:12:20,141 - INFO -                                 Open       High        Low      Close  \
+Date                                                                    
+2015-01-02 00:00:00+00:00  63.358749  82.650002  82.690002  82.419998   
+2015-01-05 00:00:00+00:00  63.542751  82.889999  82.919998  82.699997   
+2015-01-06 00:00:00+00:00  63.726723  83.129997  83.379997  83.029999   
+2015-01-07 00:00:00+00:00  63.765079  83.180000  83.279999  83.050003   
+2015-01-08 00:00:00+00:00  63.665405  83.050003  83.110001  82.970001   
+
+                           Adj Close   Volume  
+Date                                           
+2015-01-02 00:00:00+00:00  82.430000  2218800  
+2015-01-05 00:00:00+00:00  82.739998  5820100  
+2015-01-06 00:00:00+00:00  83.029999  3887600  
+2015-01-07 00:00:00+00:00  83.139999  2433400  
+2015-01-08 00:00:00+00:00  83.110001  1873400  
+2024-11-11 23:12:20,164 - INFO - Data for BND saved to ../data/raw\BND.csv
+2024-11-11 23:12:20,182 - INFO - DataFrame for SPY before saving:
+2024-11-11 23:12:20,183 - INFO -                                  Open        High         Low       Close  \
+Date                                                                        
+2015-01-02 00:00:00+00:00  173.173752  205.429993  206.880005  204.179993   
+2015-01-05 00:00:00+00:00  170.046280  201.720001  204.369995  201.350006   
+2015-01-06 00:00:00+00:00  168.444656  199.820007  202.720001  198.860001   
+2015-01-07 00:00:00+00:00  170.543610  202.309998  202.720001  200.880005   
+2015-01-08 00:00:00+00:00  173.569962  205.899994  206.160004  203.990005   
+
+                            Adj Close     Volume  
+Date                                              
+2015-01-02 00:00:00+00:00  206.380005  121465900  
+2015-01-05 00:00:00+00:00  204.169998  169632600  
+2015-01-06 00:00:00+00:00  202.089996  209151400  
+2015-01-07 00:00:00+00:00  201.419998  125346700  
+2015-01-08 00:00:00+00:00  204.009995  147217800  
+2024-11-11 23:12:20,216 - INFO - Data for SPY saved to ../data/raw\SPY.csv
+2024-11-11 23:12:24,156 - INFO - DataFrame for TSLA before saving:
+2024-11-11 23:12:24,156 - INFO -                                 Open       High        Low      Close  \
+Date                                                                    
+2015-01-02 00:00:00+00:00  14.620667  14.620667  14.883333  14.217333   
+2015-01-05 00:00:00+00:00  14.006000  14.006000  14.433333  13.810667   
+2015-01-06 00:00:00+00:00  14.085333  14.085333  14.280000  13.614000   
+2015-01-07 00:00:00+00:00  14.063333  14.063333  14.318667  13.985333   
+2015-01-08 00:00:00+00:00  14.041333  14.041333  14.253333  14.000667   
+
+                           Adj Close    Volume  
+Date                                            
+2015-01-02 00:00:00+00:00  14.858000  71466000  
+2015-01-05 00:00:00+00:00  14.303333  80527500  
+2015-01-06 00:00:00+00:00  14.004000  93928500  
+2015-01-07 00:00:00+00:00  14.223333  44526000  
+2015-01-08 00:00:00+00:00  14.187333  51637500  
+2024-11-11 23:12:24,213 - INFO - Data for TSLA saved to ../data/raw\TSLA.csv
+2024-11-11 23:12:24,215 - INFO - DataFrame for BND before saving:
+2024-11-11 23:12:24,215 - INFO -                                 Open       High        Low      Close  \
+Date                                                                    
+2015-01-02 00:00:00+00:00  63.358749  82.650002  82.690002  82.419998   
+2015-01-05 00:00:00+00:00  63.542751  82.889999  82.919998  82.699997   
+2015-01-06 00:00:00+00:00  63.726723  83.129997  83.379997  83.029999   
+2015-01-07 00:00:00+00:00  63.765079  83.180000  83.279999  83.050003   
+2015-01-08 00:00:00+00:00  63.665405  83.050003  83.110001  82.970001   
+
+                           Adj Close   Volume  
+Date                                           
+2015-01-02 00:00:00+00:00  82.430000  2218800  
+2015-01-05 00:00:00+00:00  82.739998  5820100  
+2015-01-06 00:00:00+00:00  83.029999  3887600  
+2015-01-07 00:00:00+00:00  83.139999  2433400  
+2015-01-08 00:00:00+00:00  83.110001  1873400  
+2024-11-11 23:12:24,268 - INFO - Data for BND saved to ../data/raw\BND.csv
+2024-11-11 23:12:24,273 - INFO - DataFrame for SPY before saving:
+2024-11-11 23:12:24,273 - INFO -                                  Open        High         Low       Close  \
+Date                                                                        
+2015-01-02 00:00:00+00:00  173.173752  205.429993  206.880005  204.179993   
+2015-01-05 00:00:00+00:00  170.046280  201.720001  204.369995  201.350006   
+2015-01-06 00:00:00+00:00  168.444656  199.820007  202.720001  198.860001   
+2015-01-07 00:00:00+00:00  170.543610  202.309998  202.720001  200.880005   
+2015-01-08 00:00:00+00:00  173.569962  205.899994  206.160004  203.990005   
+
+                            Adj Close     Volume  
+Date                                              
+2015-01-02 00:00:00+00:00  206.380005  121465900  
+2015-01-05 00:00:00+00:00  204.169998  169632600  
+2015-01-06 00:00:00+00:00  202.089996  209151400  
+2015-01-07 00:00:00+00:00  201.419998  125346700  
+2015-01-08 00:00:00+00:00  204.009995  147217800  
+2024-11-11 23:12:24,297 - INFO - Data for SPY saved to ../data/raw\SPY.csv
+2024-11-11 23:12:26,961 - INFO - Checking missing values for TSLA
+2024-11-11 23:12:26,964 - INFO - Missing values for TSLA: Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+2024-11-11 23:12:26,964 - INFO - Checking missing values for BND
+2024-11-11 23:12:26,964 - INFO - Missing values for BND: Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+2024-11-11 23:12:26,964 - INFO - Checking missing values for SPY
+2024-11-11 23:12:26,964 - INFO - Missing values for SPY: Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+2024-11-11 23:12:26,964 - INFO - Data cleaning completed.
+2024-11-11 23:13:05,428 - INFO - Outliers detected for TSLA using z_score.
+2024-11-11 23:13:05,431 - INFO - Outliers detected for BND using z_score.
+2024-11-11 23:13:05,431 - INFO - Outliers detected for SPY using z_score.
+2024-11-11 23:13:05,901 - INFO - Outliers handled for TSLA by setting to NaN and filling with interpolation.
+2024-11-11 23:13:05,905 - INFO - Outliers handled for BND by setting to NaN and filling with interpolation.
+2024-11-11 23:13:05,910 - INFO - Outliers handled for SPY by setting to NaN and filling with interpolation.
+2024-11-11 23:13:05,910 - INFO - All outliers have been handled.
+2024-11-11 23:13:06,247 - INFO - Outliers detected for TSLA using z_score.
+2024-11-11 23:13:06,247 - INFO - Outliers detected for BND using z_score.
+2024-11-11 23:13:06,247 - INFO - Outliers detected for SPY using z_score.
+2024-11-11 23:13:06,542 - INFO - Outliers handled for TSLA by setting to NaN and filling with interpolation.
+2024-11-11 23:13:06,617 - INFO - Outliers handled for BND by setting to NaN and filling with interpolation.
+2024-11-11 23:13:06,629 - INFO - Outliers handled for SPY by setting to NaN and filling with interpolation.
+2024-11-11 23:13:06,629 - INFO - All outliers have been handled.
+2024-11-11 23:13:06,882 - INFO - Outliers detected for TSLA using z_score.
+2024-11-11 23:13:06,886 - INFO - Outliers detected for BND using z_score.
+2024-11-11 23:13:06,888 - INFO - Outliers detected for SPY using z_score.
+2024-11-11 23:13:07,193 - INFO - Outliers handled for TSLA by setting to NaN and filling with interpolation.
+2024-11-11 23:13:07,198 - INFO - Outliers handled for BND by setting to NaN and filling with interpolation.
+2024-11-11 23:13:07,201 - INFO - Outliers handled for SPY by setting to NaN and filling with interpolation.
+2024-11-11 23:13:07,201 - INFO - All outliers have been handled.
+2024-11-11 23:14:25,566 - INFO - Outliers detected for TSLA using z_score.
+2024-11-11 23:14:25,571 - INFO - Outliers detected for BND using z_score.
+2024-11-11 23:14:25,579 - INFO - Outliers detected for SPY using z_score.
+2024-11-11 23:14:25,835 - INFO - Outliers handled for TSLA by setting to NaN and filling with interpolation.
+2024-11-11 23:14:25,835 - INFO - Outliers handled for BND by setting to NaN and filling with interpolation.
+2024-11-11 23:14:25,845 - INFO - Outliers handled for SPY by setting to NaN and filling with interpolation.
+2024-11-11 23:14:25,845 - INFO - All outliers have been handled.
+2024-11-11 23:14:26,174 - INFO - Outliers detected for TSLA using z_score.
+2024-11-11 23:14:26,184 - INFO - Outliers detected for BND using z_score.
+2024-11-11 23:14:26,189 - INFO - Outliers detected for SPY using z_score.
+2024-11-11 23:14:26,461 - INFO - Outliers handled for TSLA by setting to NaN and filling with interpolation.
+2024-11-11 23:14:26,466 - INFO - Outliers handled for BND by setting to NaN and filling with interpolation.
+2024-11-11 23:14:26,470 - INFO - Outliers handled for SPY by setting to NaN and filling with interpolation.
+2024-11-11 23:14:26,470 - INFO - All outliers have been handled.
+2024-11-11 23:14:26,725 - INFO - Outliers detected for TSLA using z_score.
+2024-11-11 23:14:26,725 - INFO - Outliers detected for BND using z_score.
+2024-11-11 23:14:26,725 - INFO - Outliers detected for SPY using z_score.
+2024-11-11 23:14:27,007 - INFO - Outliers handled for TSLA by setting to NaN and filling with interpolation.
+2024-11-11 23:14:27,011 - INFO - Outliers handled for BND by setting to NaN and filling with interpolation.
+2024-11-11 23:14:27,014 - INFO - Outliers handled for SPY by setting to NaN and filling with interpolation.
+2024-11-11 23:14:27,014 - INFO - All outliers have been handled.
+2024-11-11 23:15:06,524 - INFO - Outliers detected for TSLA using z_score.
+2024-11-11 23:15:06,529 - INFO - Outliers detected for BND using z_score.
+2024-11-11 23:15:06,534 - INFO - Outliers detected for SPY using z_score.
+2024-11-11 23:15:06,809 - INFO - Outliers handled for TSLA by setting to NaN and filling with interpolation.
+2024-11-11 23:15:06,812 - INFO - Outliers handled for BND by setting to NaN and filling with interpolation.
+2024-11-11 23:15:06,816 - INFO - Outliers handled for SPY by setting to NaN and filling with interpolation.
+2024-11-11 23:15:06,816 - INFO - All outliers have been handled.
+2024-11-11 23:15:07,081 - INFO - Outliers detected for TSLA using z_score.
+2024-11-11 23:15:07,085 - INFO - Outliers detected for BND using z_score.
+2024-11-11 23:15:07,089 - INFO - Outliers detected for SPY using z_score.
+2024-11-11 23:15:07,371 - INFO - Outliers handled for TSLA by setting to NaN and filling with interpolation.
+2024-11-11 23:15:07,376 - INFO - Outliers handled for BND by setting to NaN and filling with interpolation.
+2024-11-11 23:15:07,381 - INFO - Outliers handled for SPY by setting to NaN and filling with interpolation.
+2024-11-11 23:15:07,381 - INFO - All outliers have been handled.
+2024-11-11 23:15:07,665 - INFO - Outliers detected for TSLA using z_score.
+2024-11-11 23:15:07,668 - INFO - Outliers detected for BND using z_score.
+2024-11-11 23:15:07,671 - INFO - Outliers detected for SPY using z_score.
+2024-11-11 23:15:08,058 - INFO - Outliers handled for TSLA by setting to NaN and filling with interpolation.
+2024-11-11 23:15:08,058 - INFO - Outliers handled for BND by setting to NaN and filling with interpolation.
+2024-11-11 23:15:08,074 - INFO - Outliers handled for SPY by setting to NaN and filling with interpolation.
+2024-11-11 23:15:08,075 - INFO - All outliers have been handled.
+2024-11-11 23:15:24,892 - INFO - Outliers detected for TSLA using z_score.
+2024-11-11 23:15:24,892 - INFO - Outliers detected for BND using z_score.
+2024-11-11 23:15:24,911 - INFO - Outliers detected for SPY using z_score.
+2024-11-11 23:15:25,203 - INFO - Outliers handled for TSLA by setting to NaN and filling with interpolation.
+2024-11-11 23:15:25,208 - INFO - Outliers handled for BND by setting to NaN and filling with interpolation.
+2024-11-11 23:15:25,212 - INFO - Outliers handled for SPY by setting to NaN and filling with interpolation.
+2024-11-11 23:15:25,212 - INFO - All outliers have been handled.
+2024-11-11 23:15:25,473 - INFO - Outliers detected for TSLA using z_score.
+2024-11-11 23:15:25,483 - INFO - Outliers detected for BND using z_score.
+2024-11-11 23:15:25,488 - INFO - Outliers detected for SPY using z_score.
+2024-11-11 23:15:25,749 - INFO - Outliers handled for TSLA by setting to NaN and filling with interpolation.
+2024-11-11 23:15:25,753 - INFO - Outliers handled for BND by setting to NaN and filling with interpolation.
+2024-11-11 23:15:25,757 - INFO - Outliers handled for SPY by setting to NaN and filling with interpolation.
+2024-11-11 23:15:25,757 - INFO - All outliers have been handled.
+2024-11-11 23:15:26,046 - INFO - Outliers detected for TSLA using z_score.
+2024-11-11 23:15:26,057 - INFO - Outliers detected for BND using z_score.
+2024-11-11 23:15:26,062 - INFO - Outliers detected for SPY using z_score.
+2024-11-11 23:15:26,397 - INFO - Outliers handled for TSLA by setting to NaN and filling with interpolation.
+2024-11-11 23:15:26,397 - INFO - Outliers handled for BND by setting to NaN and filling with interpolation.
+2024-11-11 23:15:26,411 - INFO - Outliers handled for SPY by setting to NaN and filling with interpolation.
+2024-11-11 23:15:26,411 - INFO - All outliers have been handled.
+2024-11-11 23:16:04,021 - INFO - Outliers detected for TSLA using z_score.
+2024-11-11 23:16:04,027 - INFO - Outliers detected for BND using z_score.
+2024-11-11 23:16:04,033 - INFO - Outliers detected for SPY using z_score.
+2024-11-11 23:16:04,513 - INFO - Outliers handled for TSLA by setting to NaN and filling with interpolation.
+2024-11-11 23:16:04,518 - INFO - Outliers handled for BND by setting to NaN and filling with interpolation.
+2024-11-11 23:16:04,522 - INFO - Outliers handled for SPY by setting to NaN and filling with interpolation.
+2024-11-11 23:16:04,522 - INFO - All outliers have been handled.
+2024-11-11 23:16:04,958 - INFO - Outliers detected for TSLA using z_score.
+2024-11-11 23:16:04,958 - INFO - Outliers detected for BND using z_score.
+2024-11-11 23:16:04,958 - INFO - Outliers detected for SPY using z_score.
+2024-11-11 23:16:05,440 - INFO - Outliers handled for TSLA by setting to NaN and filling with interpolation.
+2024-11-11 23:16:05,445 - INFO - Outliers handled for BND by setting to NaN and filling with interpolation.
+2024-11-11 23:16:05,450 - INFO - Outliers handled for SPY by setting to NaN and filling with interpolation.
+2024-11-11 23:16:05,450 - INFO - All outliers have been handled.
+2024-11-11 23:16:05,890 - INFO - Outliers detected for TSLA using z_score.
+2024-11-11 23:16:05,905 - INFO - Outliers detected for BND using z_score.
+2024-11-11 23:16:05,908 - INFO - Outliers detected for SPY using z_score.
+2024-11-11 23:16:06,369 - INFO - Outliers handled for TSLA by setting to NaN and filling with interpolation.
+2024-11-11 23:16:06,371 - INFO - Outliers handled for BND by setting to NaN and filling with interpolation.
+2024-11-11 23:16:06,371 - INFO - Outliers handled for SPY by setting to NaN and filling with interpolation.
+2024-11-11 23:16:06,371 - INFO - All outliers have been handled.
+2024-11-11 23:19:55,835 - INFO - Outliers detected for TSLA using z_score.
+2024-11-11 23:19:55,839 - INFO - Outliers detected for BND using z_score.
+2024-11-11 23:19:55,848 - INFO - Outliers detected for SPY using z_score.
+2024-11-11 23:19:56,296 - INFO - Outliers handled for TSLA by setting to NaN and filling with interpolation.
+2024-11-11 23:19:56,296 - INFO - Outliers handled for BND by setting to NaN and filling with interpolation.
+2024-11-11 23:19:56,296 - INFO - Outliers handled for SPY by setting to NaN and filling with interpolation.
+2024-11-11 23:19:56,296 - INFO - All outliers have been handled.
+2024-11-11 23:19:56,796 - INFO - Outliers detected for TSLA using z_score.
+2024-11-11 23:19:56,949 - INFO - Outliers detected for BND using z_score.
+2024-11-11 23:19:56,962 - INFO - Outliers detected for SPY using z_score.
+2024-11-11 23:19:57,449 - INFO - Outliers handled for TSLA by setting to NaN and filling with interpolation.
+2024-11-11 23:19:57,452 - INFO - Outliers handled for BND by setting to NaN and filling with interpolation.
+2024-11-11 23:19:57,455 - INFO - Outliers handled for SPY by setting to NaN and filling with interpolation.
+2024-11-11 23:19:57,455 - INFO - All outliers have been handled.
+2024-11-11 23:19:57,931 - INFO - Outliers detected for TSLA using z_score.
+2024-11-11 23:19:57,935 - INFO - Outliers detected for BND using z_score.
+2024-11-11 23:19:57,939 - INFO - Outliers detected for SPY using z_score.
+2024-11-11 23:19:58,419 - INFO - Outliers handled for TSLA by setting to NaN and filling with interpolation.
+2024-11-11 23:19:58,432 - INFO - Outliers handled for BND by setting to NaN and filling with interpolation.
+2024-11-11 23:19:58,435 - INFO - Outliers handled for SPY by setting to NaN and filling with interpolation.
+2024-11-11 23:19:58,435 - INFO - All outliers have been handled.
+2024-11-11 23:21:08,949 - INFO - Outliers detected for TSLA using z_score.
+2024-11-11 23:21:08,949 - INFO - Outliers detected for BND using z_score.
+2024-11-11 23:21:08,965 - INFO - Outliers detected for SPY using z_score.
+2024-11-11 23:21:09,286 - INFO - Outliers handled for TSLA by setting to NaN and filling with interpolation.
+2024-11-11 23:21:09,286 - INFO - Outliers handled for BND by setting to NaN and filling with interpolation.
+2024-11-11 23:21:09,293 - INFO - Outliers handled for SPY by setting to NaN and filling with interpolation.
+2024-11-11 23:21:09,293 - INFO - All outliers have been handled.
+2024-11-11 23:21:09,600 - INFO - Outliers detected for TSLA using z_score.
+2024-11-11 23:21:09,604 - INFO - Outliers detected for BND using z_score.
+2024-11-11 23:21:09,606 - INFO - Outliers detected for SPY using z_score.
+2024-11-11 23:21:09,885 - INFO - Outliers handled for TSLA by setting to NaN and filling with interpolation.
+2024-11-11 23:21:09,894 - INFO - Outliers handled for BND by setting to NaN and filling with interpolation.
+2024-11-11 23:21:09,896 - INFO - Outliers handled for SPY by setting to NaN and filling with interpolation.
+2024-11-11 23:21:09,896 - INFO - All outliers have been handled.
+2024-11-11 23:21:10,203 - INFO - Outliers detected for TSLA using z_score.
+2024-11-11 23:21:10,205 - INFO - Outliers detected for BND using z_score.
+2024-11-11 23:21:10,208 - INFO - Outliers detected for SPY using z_score.
+2024-11-11 23:21:10,520 - INFO - Outliers handled for TSLA by setting to NaN and filling with interpolation.
+2024-11-11 23:21:10,523 - INFO - Outliers handled for BND by setting to NaN and filling with interpolation.
+2024-11-11 23:21:10,527 - INFO - Outliers handled for SPY by setting to NaN and filling with interpolation.
+2024-11-11 23:21:10,527 - INFO - All outliers have been handled.
+2024-11-11 23:33:31,210 - INFO - Outliers detected using Iqr method.
+2024-11-11 23:33:31,221 - INFO - Outliers handled by setting to NaN and filling with interpolation.
+2024-11-11 23:42:08,835 - INFO - Checking missing values for TSLA
+2024-11-11 23:42:08,836 - INFO - Missing values for TSLA: Open            0
+High            0
+Low             0
+Close           0
+Adj Close       0
+Volume          0
+Daily Return    0
+Rolling Mean    0
+Rolling Std     0
+Upper Band      0
+Lower Band      0
+dtype: int64
+2024-11-11 23:42:08,836 - INFO - Checking missing values for BND
+2024-11-11 23:42:08,844 - INFO - Missing values for BND: Open             0
+High             0
+Low              0
+Close            0
+Adj Close        0
+Volume           0
+Daily Return     1
+Rolling Mean    19
+Rolling Std     19
+Upper Band      19
+Lower Band      19
+dtype: int64
+2024-11-11 23:42:08,846 - INFO - Checking missing values for SPY
+2024-11-11 23:42:08,848 - INFO - Missing values for SPY: Open             0
+High             0
+Low              0
+Close            0
+Adj Close        0
+Volume           0
+Daily Return     1
+Rolling Mean    19
+Rolling Std     19
+Upper Band      19
+Lower Band      19
+dtype: int64
+2024-11-11 23:42:08,851 - INFO - Data cleaning completed.
+2024-11-11 23:49:54,577 - INFO - Outliers detected using Iqr method.
+2024-11-11 23:49:54,584 - INFO - Outliers handled by setting to NaN and filling with interpolation.
+2024-11-11 23:52:38,422 - INFO - Checking missing values for TSLA
+2024-11-11 23:52:38,424 - INFO - Missing values for TSLA: Open            0
+High            0
+Low             0
+Close           0
+Adj Close       0
+Volume          0
+Daily Return    0
+Rolling Mean    0
+Rolling Std     0
+Upper Band      0
+Lower Band      0
+dtype: int64
+2024-11-11 23:52:38,427 - INFO - Checking missing values for BND
+2024-11-11 23:52:38,427 - INFO - Missing values for BND: Open             0
+High             0
+Low              0
+Close            0
+Adj Close        0
+Volume           0
+Daily Return     1
+Rolling Mean    19
+Rolling Std     19
+Upper Band      19
+Lower Band      19
+dtype: int64
+2024-11-11 23:52:38,427 - INFO - Checking missing values for SPY
+2024-11-11 23:52:38,427 - INFO - Missing values for SPY: Open             0
+High             0
+Low              0
+Close            0
+Adj Close        0
+Volume           0
+Daily Return     1
+Rolling Mean    19
+Rolling Std     19
+Upper Band      19
+Lower Band      19
+dtype: int64
+2024-11-11 23:52:38,427 - INFO - Data cleaning completed.
+2024-11-11 23:53:16,822 - INFO - Outliers detected using Iqr method.
+2024-11-11 23:53:16,827 - INFO - Outliers handled by setting to NaN and filling with interpolation.
+2024-11-11 23:53:17,229 - INFO - Outliers detected using Iqr method.
+2024-11-11 23:53:17,236 - INFO - Outliers handled by setting to NaN and filling with interpolation.
+2024-11-11 23:53:17,629 - INFO - Outliers detected using Iqr method.
+2024-11-11 23:53:17,636 - INFO - Outliers handled by setting to NaN and filling with interpolation.
+2024-11-11 23:59:39,660 - INFO - Checking missing values for TSLA
+2024-11-11 23:59:39,661 - INFO - Missing values for TSLA: Open            0
+High            0
+Low             0
+Close           0
+Adj Close       0
+Volume          0
+Daily Return    0
+Rolling Mean    0
+Rolling Std     0
+Upper Band      0
+Lower Band      0
+dtype: int64
+2024-11-11 23:59:39,661 - INFO - Checking missing values for BND
+2024-11-11 23:59:39,661 - INFO - Missing values for BND: Open            0
+High            0
+Low             0
+Close           0
+Adj Close       0
+Volume          0
+Daily Return    0
+Rolling Mean    0
+Rolling Std     0
+Upper Band      0
+Lower Band      0
+dtype: int64
+2024-11-11 23:59:39,670 - INFO - Checking missing values for SPY
+2024-11-11 23:59:39,671 - INFO - Missing values for SPY: Open            0
+High            0
+Low             0
+Close           0
+Adj Close       0
+Volume          0
+Daily Return    0
+Rolling Mean    0
+Rolling Std     0
+Upper Band      0
+Lower Band      0
+dtype: int64
+2024-11-11 23:59:39,673 - INFO - Data cleaning completed.
+2024-11-11 23:59:56,080 - INFO - Outliers detected using Iqr method.
+2024-11-11 23:59:56,093 - INFO - Outliers handled by setting to NaN and filling with interpolation.
+2024-11-11 23:59:56,821 - INFO - Outliers detected using Iqr method.
+2024-11-11 23:59:56,831 - INFO - Outliers handled by setting to NaN and filling with interpolation.
+2024-11-11 23:59:57,805 - INFO - Outliers detected using Iqr method.
+2024-11-11 23:59:57,805 - INFO - Outliers handled by setting to NaN and filling with interpolation.
+2024-11-12 00:04:29,625 - INFO - Checking missing values for TSLA
+2024-11-12 00:04:29,627 - INFO - Missing values for TSLA: Open            0
+High            0
+Low             0
+Close           0
+Adj Close       0
+Volume          0
+Daily Return    0
+Rolling Mean    0
+Rolling Std     0
+Upper Band      0
+Lower Band      0
+dtype: int64
+2024-11-12 00:04:29,627 - INFO - Checking missing values for BND
+2024-11-12 00:04:29,627 - INFO - Missing values for BND: Open            0
+High            0
+Low             0
+Close           0
+Adj Close       0
+Volume          0
+Daily Return    0
+Rolling Mean    0
+Rolling Std     0
+Upper Band      0
+Lower Band      0
+dtype: int64
+2024-11-12 00:04:29,634 - INFO - Checking missing values for SPY
+2024-11-12 00:04:29,634 - INFO - Missing values for SPY: Open            0
+High            0
+Low             0
+Close           0
+Adj Close       0
+Volume          0
+Daily Return    0
+Rolling Mean    0
+Rolling Std     0
+Upper Band      0
+Lower Band      0
+dtype: int64
+2024-11-12 00:04:29,634 - INFO - Data cleaning completed.
+2024-11-12 00:05:17,292 - INFO - Outliers detected using Iqr method.
+2024-11-12 00:05:17,301 - INFO - Outliers handled by setting to NaN and filling with interpolation.
+2024-11-12 00:05:17,301 - INFO - No outliers detected in any columns.
+2024-11-12 00:05:17,312 - INFO - Outliers detected using Iqr method.
+2024-11-12 00:05:17,317 - INFO - Outliers handled by setting to NaN and filling with interpolation.
+2024-11-12 00:05:17,317 - INFO - No outliers detected in any columns.
+2024-11-12 00:05:17,327 - INFO - Outliers detected using Iqr method.
+2024-11-12 00:05:17,334 - INFO - Outliers handled by setting to NaN and filling with interpolation.
+2024-11-12 00:06:48,070 - INFO - Checking missing values for TSLA
+2024-11-12 00:06:48,071 - INFO - Missing values for TSLA: Open            0
+High            0
+Low             0
+Close           0
+Adj Close       0
+Volume          0
+Daily Return    0
+Rolling Mean    0
+Rolling Std     0
+Upper Band      0
+Lower Band      0
+dtype: int64
+2024-11-12 00:06:48,072 - INFO - Checking missing values for BND
+2024-11-12 00:06:48,073 - INFO - Missing values for BND: Open            0
+High            0
+Low             0
+Close           0
+Adj Close       0
+Volume          0
+Daily Return    0
+Rolling Mean    0
+Rolling Std     0
+Upper Band      0
+Lower Band      0
+dtype: int64
+2024-11-12 00:06:48,075 - INFO - Checking missing values for SPY
+2024-11-12 00:06:48,077 - INFO - Missing values for SPY: Open            0
+High            0
+Low             0
+Close           0
+Adj Close       0
+Volume          0
+Daily Return    0
+Rolling Mean    0
+Rolling Std     0
+Upper Band      0
+Lower Band      0
+dtype: int64
+2024-11-12 00:06:48,079 - INFO - Data cleaning completed.
+2024-11-12 00:07:03,144 - INFO - Outliers detected using Iqr method.
+2024-11-12 00:07:03,151 - INFO - Outliers handled by setting to NaN and filling with interpolation.
+2024-11-12 00:07:03,152 - INFO - No outliers detected in any columns.
+2024-11-12 00:07:03,161 - INFO - Outliers detected using Iqr method.
+2024-11-12 00:07:03,162 - INFO - Outliers handled by setting to NaN and filling with interpolation.
+2024-11-12 00:07:03,162 - INFO - No outliers detected in any columns.
+2024-11-12 00:07:03,173 - INFO - Outliers detected using Iqr method.
+2024-11-12 00:07:03,177 - INFO - Outliers handled by setting to NaN and filling with interpolation.
+2024-11-12 00:07:03,177 - INFO - No outliers detected in any columns.
+2024-11-12 00:07:18,070 - WARNING - Open not found in the loaded data.
+2024-11-12 00:07:18,070 - WARNING - High not found in the loaded data.
+2024-11-12 00:07:18,070 - WARNING - Low not found in the loaded data.
+2024-11-12 00:07:18,070 - WARNING - Close not found in the loaded data.
+2024-11-12 00:07:18,070 - WARNING - Adj Close not found in the loaded data.
+2024-11-12 00:07:18,070 - WARNING - Volume not found in the loaded data.
+2024-11-12 00:07:18,070 - WARNING - Daily Return not found in the loaded data.
+2024-11-12 00:07:18,070 - WARNING - Rolling Mean not found in the loaded data.
+2024-11-12 00:07:18,070 - WARNING - Rolling Std not found in the loaded data.
+2024-11-12 00:07:18,070 - WARNING - Upper Band not found in the loaded data.
+2024-11-12 00:07:18,070 - WARNING - Lower Band not found in the loaded data.
+2024-11-12 00:08:42,606 - WARNING - Open not found in the loaded data.
+2024-11-12 00:08:42,606 - WARNING - High not found in the loaded data.
+2024-11-12 00:08:42,606 - WARNING - Low not found in the loaded data.
+2024-11-12 00:08:42,606 - WARNING - Close not found in the loaded data.
+2024-11-12 00:08:42,606 - WARNING - Adj Close not found in the loaded data.
+2024-11-12 00:08:42,606 - WARNING - Volume not found in the loaded data.
+2024-11-12 00:08:42,606 - WARNING - Daily Return not found in the loaded data.
+2024-11-12 00:08:42,606 - WARNING - Rolling Mean not found in the loaded data.
+2024-11-12 00:08:42,606 - WARNING - Rolling Std not found in the loaded data.
+2024-11-12 00:08:42,606 - WARNING - Upper Band not found in the loaded data.
+2024-11-12 00:08:42,606 - WARNING - Lower Band not found in the loaded data.
+2024-11-12 00:08:44,772 - WARNING - Open not found in the loaded data.
+2024-11-12 00:08:44,772 - WARNING - High not found in the loaded data.
+2024-11-12 00:08:44,772 - WARNING - Low not found in the loaded data.
+2024-11-12 00:08:44,772 - WARNING - Close not found in the loaded data.
+2024-11-12 00:08:44,772 - WARNING - Adj Close not found in the loaded data.
+2024-11-12 00:08:44,772 - WARNING - Volume not found in the loaded data.
+2024-11-12 00:08:44,772 - WARNING - Daily Return not found in the loaded data.
+2024-11-12 00:08:44,772 - WARNING - Rolling Mean not found in the loaded data.
+2024-11-12 00:08:44,772 - WARNING - Rolling Std not found in the loaded data.
+2024-11-12 00:08:44,772 - WARNING - Upper Band not found in the loaded data.
+2024-11-12 00:08:44,772 - WARNING - Lower Band not found in the loaded data.
+2024-11-12 00:09:10,536 - WARNING - Open not found in the loaded data.
+2024-11-12 00:09:10,536 - WARNING - High not found in the loaded data.
+2024-11-12 00:09:10,537 - WARNING - Low not found in the loaded data.
+2024-11-12 00:09:10,537 - WARNING - Close not found in the loaded data.
+2024-11-12 00:09:10,537 - WARNING - Adj Close not found in the loaded data.
+2024-11-12 00:09:10,537 - WARNING - Volume not found in the loaded data.
+2024-11-12 00:09:10,537 - WARNING - Daily Return not found in the loaded data.
+2024-11-12 00:09:10,537 - WARNING - Rolling Mean not found in the loaded data.
+2024-11-12 00:09:10,537 - WARNING - Rolling Std not found in the loaded data.
+2024-11-12 00:09:10,537 - WARNING - Upper Band not found in the loaded data.
+2024-11-12 00:09:10,537 - WARNING - Lower Band not found in the loaded data.
+2024-11-12 00:10:04,579 - INFO - Checking missing values for TSLA
+2024-11-12 00:10:04,581 - INFO - Missing values for TSLA: Open            0
+High            0
+Low             0
+Close           0
+Adj Close       0
+Volume          0
+Daily Return    0
+Rolling Mean    0
+Rolling Std     0
+Upper Band      0
+Lower Band      0
+dtype: int64
+2024-11-12 00:10:04,584 - INFO - Checking missing values for BND
+2024-11-12 00:10:04,584 - INFO - Missing values for BND: Open            0
+High            0
+Low             0
+Close           0
+Adj Close       0
+Volume          0
+Daily Return    0
+Rolling Mean    0
+Rolling Std     0
+Upper Band      0
+Lower Band      0
+dtype: int64
+2024-11-12 00:10:04,584 - INFO - Checking missing values for SPY
+2024-11-12 00:10:04,584 - INFO - Missing values for SPY: Open            0
+High            0
+Low             0
+Close           0
+Adj Close       0
+Volume          0
+Daily Return    0
+Rolling Mean    0
+Rolling Std     0
+Upper Band      0
+Lower Band      0
+dtype: int64
+2024-11-12 00:10:04,584 - INFO - Data cleaning completed.
+2024-11-12 00:11:00,887 - INFO - Outliers detected using Iqr method.
+2024-11-12 00:11:00,898 - INFO - Outliers handled by setting to NaN and filling with interpolation.
+2024-11-12 00:11:00,899 - INFO - No outliers detected in any columns.
+2024-11-12 00:11:00,902 - INFO - Outliers detected using Iqr method.
+2024-11-12 00:11:00,902 - INFO - Outliers handled by setting to NaN and filling with interpolation.
+2024-11-12 00:11:00,911 - INFO - No outliers detected in any columns.
+2024-11-12 00:11:00,912 - INFO - Outliers detected using Iqr method.
+2024-11-12 00:11:00,912 - INFO - Outliers handled by setting to NaN and filling with interpolation.
+2024-11-12 00:11:00,912 - INFO - No outliers detected in any columns.
+2024-11-12 00:11:20,594 - WARNING - Open not found in the loaded data.
+2024-11-12 00:11:20,595 - WARNING - High not found in the loaded data.
+2024-11-12 00:11:20,595 - WARNING - Low not found in the loaded data.
+2024-11-12 00:11:20,595 - WARNING - Close not found in the loaded data.
+2024-11-12 00:11:20,595 - WARNING - Adj Close not found in the loaded data.
+2024-11-12 00:11:20,595 - WARNING - Volume not found in the loaded data.
+2024-11-12 00:11:20,595 - WARNING - Daily Return not found in the loaded data.
+2024-11-12 00:11:20,596 - WARNING - Rolling Mean not found in the loaded data.
+2024-11-12 00:11:20,596 - WARNING - Rolling Std not found in the loaded data.
+2024-11-12 00:11:20,596 - WARNING - Upper Band not found in the loaded data.
+2024-11-12 00:11:20,596 - WARNING - Lower Band not found in the loaded data.
+2024-11-12 00:12:00,585 - WARNING - Open not found in the loaded data.
+2024-11-12 00:12:00,585 - WARNING - High not found in the loaded data.
+2024-11-12 00:12:00,585 - WARNING - Low not found in the loaded data.
+2024-11-12 00:12:00,585 - WARNING - Close not found in the loaded data.
+2024-11-12 00:12:00,585 - WARNING - Adj Close not found in the loaded data.
+2024-11-12 00:12:00,585 - WARNING - Volume not found in the loaded data.
+2024-11-12 00:12:00,585 - WARNING - Daily Return not found in the loaded data.
+2024-11-12 00:12:00,585 - WARNING - Rolling Mean not found in the loaded data.
+2024-11-12 00:12:00,585 - WARNING - Rolling Std not found in the loaded data.
+2024-11-12 00:12:00,585 - WARNING - Upper Band not found in the loaded data.
+2024-11-12 00:12:00,585 - WARNING - Lower Band not found in the loaded data.
+2024-11-12 00:12:56,008 - WARNING - Open not found in the loaded data.
+2024-11-12 00:12:56,008 - WARNING - High not found in the loaded data.
+2024-11-12 00:12:56,009 - WARNING - Low not found in the loaded data.
+2024-11-12 00:12:56,009 - WARNING - Close not found in the loaded data.
+2024-11-12 00:12:56,009 - WARNING - Adj Close not found in the loaded data.
+2024-11-12 00:12:56,009 - WARNING - Volume not found in the loaded data.
+2024-11-12 00:12:56,009 - WARNING - Daily Return not found in the loaded data.
+2024-11-12 00:12:56,010 - WARNING - Rolling Mean not found in the loaded data.
+2024-11-12 00:12:56,010 - WARNING - Rolling Std not found in the loaded data.
+2024-11-12 00:12:56,010 - WARNING - Upper Band not found in the loaded data.
+2024-11-12 00:12:56,010 - WARNING - Lower Band not found in the loaded data.
+2024-11-12 00:16:33,160 - INFO - Checking missing values for TSLA
+2024-11-12 00:16:33,162 - INFO - Missing values for TSLA: Open            0
+High            0
+Low             0
+Close           0
+Adj Close       0
+Volume          0
+Daily Return    0
+Rolling Mean    0
+Rolling Std     0
+Upper Band      0
+Lower Band      0
+dtype: int64
+2024-11-12 00:16:33,167 - INFO - Checking missing values for BND
+2024-11-12 00:16:33,167 - INFO - Missing values for BND: Open            0
+High            0
+Low             0
+Close           0
+Adj Close       0
+Volume          0
+Daily Return    0
+Rolling Mean    0
+Rolling Std     0
+Upper Band      0
+Lower Band      0
+dtype: int64
+2024-11-12 00:16:33,175 - INFO - Checking missing values for SPY
+2024-11-12 00:16:33,175 - INFO - Missing values for SPY: Open            0
+High            0
+Low             0
+Close           0
+Adj Close       0
+Volume          0
+Daily Return    0
+Rolling Mean    0
+Rolling Std     0
+Upper Band      0
+Lower Band      0
+dtype: int64
+2024-11-12 00:16:33,183 - INFO - Data cleaning completed.
+2024-11-12 00:17:08,774 - INFO - Outliers detected using Iqr method.
+2024-11-12 00:17:08,793 - INFO - Outliers handled by setting to NaN and filling with interpolation.
+2024-11-12 00:17:19,390 - WARNING - Open not found in the loaded data.
+2024-11-12 00:17:19,390 - WARNING - High not found in the loaded data.
+2024-11-12 00:17:19,390 - WARNING - Low not found in the loaded data.
+2024-11-12 00:17:19,392 - WARNING - Close not found in the loaded data.
+2024-11-12 00:17:19,392 - WARNING - Adj Close not found in the loaded data.
+2024-11-12 00:17:19,392 - WARNING - Volume not found in the loaded data.
+2024-11-12 00:17:19,392 - WARNING - Daily Return not found in the loaded data.
+2024-11-12 00:17:19,392 - WARNING - Rolling Mean not found in the loaded data.
+2024-11-12 00:17:19,392 - WARNING - Rolling Std not found in the loaded data.
+2024-11-12 00:17:19,392 - WARNING - Upper Band not found in the loaded data.
+2024-11-12 00:17:19,392 - WARNING - Lower Band not found in the loaded data.
+2024-11-12 00:17:22,380 - WARNING - Open not found in the loaded data.
+2024-11-12 00:17:22,380 - WARNING - High not found in the loaded data.
+2024-11-12 00:17:22,381 - WARNING - Low not found in the loaded data.
+2024-11-12 00:17:22,381 - WARNING - Close not found in the loaded data.
+2024-11-12 00:17:22,381 - WARNING - Adj Close not found in the loaded data.
+2024-11-12 00:17:22,381 - WARNING - Volume not found in the loaded data.
+2024-11-12 00:17:22,381 - WARNING - Daily Return not found in the loaded data.
+2024-11-12 00:17:22,381 - WARNING - Rolling Mean not found in the loaded data.
+2024-11-12 00:17:22,381 - WARNING - Rolling Std not found in the loaded data.
+2024-11-12 00:17:22,381 - WARNING - Upper Band not found in the loaded data.
+2024-11-12 00:17:22,381 - WARNING - Lower Band not found in the loaded data.
+2024-11-12 00:22:20,805 - WARNING - Open not found in the loaded data.
+2024-11-12 00:22:20,805 - WARNING - High not found in the loaded data.
+2024-11-12 00:22:20,806 - WARNING - Low not found in the loaded data.
+2024-11-12 00:22:20,806 - WARNING - Close not found in the loaded data.
+2024-11-12 00:22:20,806 - WARNING - Adj Close not found in the loaded data.
+2024-11-12 00:22:20,806 - WARNING - Volume not found in the loaded data.
+2024-11-12 00:22:20,806 - WARNING - Daily Return not found in the loaded data.
+2024-11-12 00:22:20,806 - WARNING - Rolling Mean not found in the loaded data.
+2024-11-12 00:22:20,806 - WARNING - Rolling Std not found in the loaded data.
+2024-11-12 00:22:20,806 - WARNING - Upper Band not found in the loaded data.
+2024-11-12 00:22:20,806 - WARNING - Lower Band not found in the loaded data.
+2024-11-12 00:34:40,272 - INFO - Checking missing values for TSLA
+2024-11-12 00:34:40,275 - INFO - Missing values for TSLA: Open            0
+High            0
+Low             0
+Close           0
+Adj Close       0
+Volume          0
+Daily Return    0
+Rolling Mean    0
+Rolling Std     0
+Upper Band      0
+Lower Band      0
+dtype: int64
+2024-11-12 00:34:40,278 - INFO - Checking missing values for BND
+2024-11-12 00:34:40,284 - INFO - Missing values for BND: Open            0
+High            0
+Low             0
+Close           0
+Adj Close       0
+Volume          0
+Daily Return    0
+Rolling Mean    0
+Rolling Std     0
+Upper Band      0
+Lower Band      0
+dtype: int64
+2024-11-12 00:34:40,286 - INFO - Checking missing values for SPY
+2024-11-12 00:34:40,289 - INFO - Missing values for SPY: Open            0
+High            0
+Low             0
+Close           0
+Adj Close       0
+Volume          0
+Daily Return    0
+Rolling Mean    0
+Rolling Std     0
+Upper Band      0
+Lower Band      0
+dtype: int64
+2024-11-12 00:34:40,294 - INFO - Data cleaning completed.
+2024-11-12 00:39:06,113 - INFO - Checking missing values for TSLA
+2024-11-12 00:39:06,113 - INFO - Missing values for TSLA: Open            0
+High            0
+Low             0
+Close           0
+Adj Close       0
+Volume          0
+Daily Return    0
+Rolling Mean    0
+Rolling Std     0
+Upper Band      0
+Lower Band      0
+dtype: int64
+2024-11-12 00:39:06,113 - INFO - Checking missing values for BND
+2024-11-12 00:39:06,113 - INFO - Missing values for BND: Open            0
+High            0
+Low             0
+Close           0
+Adj Close       0
+Volume          0
+Daily Return    0
+Rolling Mean    0
+Rolling Std     0
+Upper Band      0
+Lower Band      0
+dtype: int64
+2024-11-12 00:39:06,126 - INFO - Checking missing values for SPY
+2024-11-12 00:39:06,130 - INFO - Missing values for SPY: Open            0
+High            0
+Low             0
+Close           0
+Adj Close       0
+Volume          0
+Daily Return    0
+Rolling Mean    0
+Rolling Std     0
+Upper Band      0
+Lower Band      0
+dtype: int64
+2024-11-12 00:39:06,136 - INFO - Data cleaning completed.
+2024-11-12 00:40:11,608 - INFO - The Value at Risk (VaR) for TSLA at 95.0% confidence level is -5.08%
+2024-11-12 00:40:11,612 - INFO - The Value at Risk (VaR) for BND at 95.0% confidence level is -0.47%
+2024-11-12 00:40:11,612 - INFO - The Value at Risk (VaR) for SPY at 95.0% confidence level is -1.55%
+2024-11-12 00:40:14,421 - INFO - The Sharpe Ratio for TSLA is -0.24
+2024-11-12 00:40:14,424 - INFO - The Sharpe Ratio for BND is -2.57
+2024-11-12 00:40:14,424 - INFO - The Sharpe Ratio for SPY is -0.94
+2024-11-12 00:44:46,973 - INFO - Checking missing values for TSLA
+2024-11-12 00:44:46,976 - INFO - Missing values for TSLA: Open            0
+High            0
+Low             0
+Close           0
+Adj Close       0
+Volume          0
+Daily Return    0
+Rolling Mean    0
+Rolling Std     0
+Upper Band      0
+Lower Band      0
+dtype: int64
+2024-11-12 00:44:46,983 - INFO - Checking missing values for BND
+2024-11-12 00:44:46,984 - INFO - Missing values for BND: Open            0
+High            0
+Low             0
+Close           0
+Adj Close       0
+Volume          0
+Daily Return    0
+Rolling Mean    0
+Rolling Std     0
+Upper Band      0
+Lower Band      0
+dtype: int64
+2024-11-12 00:44:46,984 - INFO - Checking missing values for SPY
+2024-11-12 00:44:46,990 - INFO - Missing values for SPY: Open            0
+High            0
+Low             0
+Close           0
+Adj Close       0
+Volume          0
+Daily Return    0
+Rolling Mean    0
+Rolling Std     0
+Upper Band      0
+Lower Band      0
+dtype: int64
+2024-11-12 00:44:46,992 - INFO - Data cleaning completed.
+2024-11-12 00:47:57,204 - INFO - Checking missing values for TSLA
+2024-11-12 00:47:57,209 - INFO - Missing values for TSLA: Open            0
+High            0
+Low             0
+Close           0
+Adj Close       0
+Volume          0
+Daily Return    0
+Rolling Mean    0
+Rolling Std     0
+Upper Band      0
+Lower Band      0
+dtype: int64
+2024-11-12 00:47:57,213 - INFO - Checking missing values for BND
+2024-11-12 00:47:57,217 - INFO - Missing values for BND: Open            0
+High            0
+Low             0
+Close           0
+Adj Close       0
+Volume          0
+Daily Return    0
+Rolling Mean    0
+Rolling Std     0
+Upper Band      0
+Lower Band      0
+dtype: int64
+2024-11-12 00:47:57,222 - INFO - Checking missing values for SPY
+2024-11-12 00:47:57,225 - INFO - Missing values for SPY: Open            0
+High            0
+Low             0
+Close           0
+Adj Close       0
+Volume          0
+Daily Return    0
+Rolling Mean    0
+Rolling Std     0
+Upper Band      0
+Lower Band      0
+dtype: int64
+2024-11-12 00:47:57,232 - INFO - Data cleaning completed.
+2024-11-12 13:40:42,659 - INFO - Loading data for TSLA from 2015-01-01 to 2024-10-31
+2024-11-12 13:40:53,853 - INFO - Data for TSLA loaded successfully.
+2024-11-12 13:40:53,853 - INFO - Loading data for BND from 2015-01-01 to 2024-10-31
+2024-11-12 13:40:54,280 - INFO - Data for BND loaded successfully.
+2024-11-12 13:40:54,280 - INFO - Loading data for SPY from 2015-01-01 to 2024-10-31
+2024-11-12 13:40:54,715 - INFO - Data for SPY loaded successfully.
+2024-11-12 13:40:56,469 - INFO - DataFrame for TSLA before saving:
+2024-11-12 13:40:56,470 - INFO -                                 Open       High        Low      Close  \
+Date                                                                    
+2015-01-02 00:00:00+00:00  14.620667  14.620667  14.883333  14.217333   
+2015-01-05 00:00:00+00:00  14.006000  14.006000  14.433333  13.810667   
+2015-01-06 00:00:00+00:00  14.085333  14.085333  14.280000  13.614000   
+2015-01-07 00:00:00+00:00  14.063333  14.063333  14.318667  13.985333   
+2015-01-08 00:00:00+00:00  14.041333  14.041333  14.253333  14.000667   
+
+                           Adj Close    Volume  
+Date                                            
+2015-01-02 00:00:00+00:00  14.858000  71466000  
+2015-01-05 00:00:00+00:00  14.303333  80527500  
+2015-01-06 00:00:00+00:00  14.004000  93928500  
+2015-01-07 00:00:00+00:00  14.223333  44526000  
+2015-01-08 00:00:00+00:00  14.187333  51637500  
+2024-11-12 13:40:56,601 - INFO - Data for TSLA saved to ../data/raw\TSLA.csv
+2024-11-12 13:40:56,611 - INFO - DataFrame for BND before saving:
+2024-11-12 13:40:56,611 - INFO -                                 Open       High        Low      Close  \
+Date                                                                    
+2015-01-02 00:00:00+00:00  63.358749  82.650002  82.690002  82.419998   
+2015-01-05 00:00:00+00:00  63.542751  82.889999  82.919998  82.699997   
+2015-01-06 00:00:00+00:00  63.726696  83.129997  83.379997  83.029999   
+2015-01-07 00:00:00+00:00  63.765045  83.180000  83.279999  83.050003   
+2015-01-08 00:00:00+00:00  63.665432  83.050003  83.110001  82.970001   
+
+                           Adj Close   Volume  
+Date                                           
+2015-01-02 00:00:00+00:00  82.430000  2218800  
+2015-01-05 00:00:00+00:00  82.739998  5820100  
+2015-01-06 00:00:00+00:00  83.029999  3887600  
+2015-01-07 00:00:00+00:00  83.139999  2433400  
+2015-01-08 00:00:00+00:00  83.110001  1873400  
+2024-11-12 13:40:56,656 - INFO - Data for BND saved to ../data/raw\BND.csv
+2024-11-12 13:40:56,659 - INFO - DataFrame for SPY before saving:
+2024-11-12 13:40:56,659 - INFO -                                  Open        High         Low       Close  \
+Date                                                                        
+2015-01-02 00:00:00+00:00  173.173752  205.429993  206.880005  204.179993   
+2015-01-05 00:00:00+00:00  170.046295  201.720001  204.369995  201.350006   
+2015-01-06 00:00:00+00:00  168.444672  199.820007  202.720001  198.860001   
+2015-01-07 00:00:00+00:00  170.543686  202.309998  202.720001  200.880005   
+2015-01-08 00:00:00+00:00  173.569992  205.899994  206.160004  203.990005   
+
+                            Adj Close     Volume  
+Date                                              
+2015-01-02 00:00:00+00:00  206.380005  121465900  
+2015-01-05 00:00:00+00:00  204.169998  169632600  
+2015-01-06 00:00:00+00:00  202.089996  209151400  
+2015-01-07 00:00:00+00:00  201.419998  125346700  
+2015-01-08 00:00:00+00:00  204.009995  147217800  
+2024-11-12 13:40:56,809 - INFO - Data for SPY saved to ../data/raw\SPY.csv
+2024-11-12 13:41:20,137 - INFO - Checking missing values for TSLA
+2024-11-12 13:41:20,139 - INFO - Missing values for TSLA: Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+2024-11-12 13:41:20,425 - INFO - Data has been sorted in ascending order.
+2024-11-12 13:41:20,425 - INFO - Checking missing values for BND
+2024-11-12 13:41:20,426 - INFO - Missing values for BND: Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+2024-11-12 13:41:20,435 - INFO - Data has been sorted in ascending order.
+2024-11-12 13:41:20,435 - INFO - Checking missing values for SPY
+2024-11-12 13:41:20,436 - INFO - Missing values for SPY: Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+2024-11-12 13:41:20,579 - INFO - Data has been sorted in ascending order.
+2024-11-12 13:41:20,579 - INFO - Data cleaning completed.
+2024-11-12 13:58:32,051 - INFO - Checking missing values for TSLA
+2024-11-12 13:58:32,052 - INFO - Missing values for TSLA: Open             0
+High             0
+Low              0
+Close            0
+Adj Close        0
+Volume           0
+Daily Return     1
+Rolling Mean    19
+Rolling Std     19
+Upper Band      19
+Lower Band      19
+dtype: int64
+2024-11-12 13:58:32,052 - INFO - Data has been sorted in ascending order.
+2024-11-12 13:58:32,052 - INFO - Checking missing values for BND
+2024-11-12 13:58:32,052 - INFO - Missing values for BND: Open             0
+High             0
+Low              0
+Close            0
+Adj Close        0
+Volume           0
+Daily Return     1
+Rolling Mean    19
+Rolling Std     19
+Upper Band      19
+Lower Band      19
+dtype: int64
+2024-11-12 13:58:32,074 - INFO - Data has been sorted in ascending order.
+2024-11-12 13:58:32,074 - INFO - Checking missing values for SPY
+2024-11-12 13:58:32,075 - INFO - Missing values for SPY: Open             0
+High             0
+Low              0
+Close            0
+Adj Close        0
+Volume           0
+Daily Return     1
+Rolling Mean    19
+Rolling Std     19
+Upper Band      19
+Lower Band      19
+dtype: int64
+2024-11-12 13:58:32,290 - INFO - Data has been sorted in ascending order.
+2024-11-12 13:58:32,290 - INFO - Data cleaning completed.
+2024-11-12 14:03:56,836 - INFO - The Value at Risk (VaR) for TSLA at 95.0% confidence level is -4.30%
+2024-11-12 14:03:56,836 - INFO - The Value at Risk (VaR) for BND at 95.0% confidence level is -0.40%
+2024-11-12 14:03:56,839 - INFO - The Value at Risk (VaR) for SPY at 95.0% confidence level is -1.28%
+2024-11-12 14:04:02,000 - INFO - The Sharpe Ratio for TSLA is -0.31
+2024-11-12 14:04:02,001 - INFO - The Sharpe Ratio for BND is -3.08
+2024-11-12 14:04:02,001 - INFO - The Sharpe Ratio for SPY is -1.14
+2024-11-12 14:06:06,715 - INFO - Checking missing values for TSLA
+2024-11-12 14:06:06,717 - INFO - Missing values for TSLA: Open            0
+High            0
+Low             0
+Close           0
+Adj Close       0
+Volume          0
+Daily Return    0
+Rolling Mean    0
+Rolling Std     0
+Upper Band      0
+Lower Band      0
+dtype: int64
+2024-11-12 14:06:06,726 - INFO - Data has been sorted in ascending order.
+2024-11-12 14:06:06,726 - INFO - Checking missing values for BND
+2024-11-12 14:06:06,726 - INFO - Missing values for BND: Open            0
+High            0
+Low             0
+Close           0
+Adj Close       0
+Volume          0
+Daily Return    0
+Rolling Mean    0
+Rolling Std     0
+Upper Band      0
+Lower Band      0
+dtype: int64
+2024-11-12 14:06:06,737 - INFO - Data has been sorted in ascending order.
+2024-11-12 14:06:06,737 - INFO - Checking missing values for SPY
+2024-11-12 14:06:06,739 - INFO - Missing values for SPY: Open            0
+High            0
+Low             0
+Close           0
+Adj Close       0
+Volume          0
+Daily Return    0
+Rolling Mean    0
+Rolling Std     0
+Upper Band      0
+Lower Band      0
+dtype: int64
+2024-11-12 14:06:06,739 - INFO - Data has been sorted in ascending order.
+2024-11-12 14:06:06,739 - INFO - Data cleaning completed.
+2024-11-12 14:07:15,534 - INFO - The Value at Risk (VaR) for TSLA at 95.0% confidence level is -4.30%
+2024-11-12 14:07:15,534 - INFO - The Value at Risk (VaR) for BND at 95.0% confidence level is -0.40%
+2024-11-12 14:07:15,534 - INFO - The Value at Risk (VaR) for SPY at 95.0% confidence level is -1.28%
+2024-11-12 14:07:17,652 - INFO - The Value at Risk (VaR) for TSLA at 95.0% confidence level is -4.30%
+2024-11-12 14:07:17,652 - INFO - The Value at Risk (VaR) for BND at 95.0% confidence level is -0.40%
+2024-11-12 14:07:17,652 - INFO - The Value at Risk (VaR) for SPY at 95.0% confidence level is -1.28%
+2024-11-12 14:07:18,248 - INFO - The Value at Risk (VaR) for TSLA at 95.0% confidence level is -4.30%
+2024-11-12 14:07:18,250 - INFO - The Value at Risk (VaR) for BND at 95.0% confidence level is -0.40%
+2024-11-12 14:07:18,251 - INFO - The Value at Risk (VaR) for SPY at 95.0% confidence level is -1.28%
+2024-11-12 14:07:18,768 - INFO - The Value at Risk (VaR) for TSLA at 95.0% confidence level is -4.30%
+2024-11-12 14:07:18,769 - INFO - The Value at Risk (VaR) for BND at 95.0% confidence level is -0.40%
+2024-11-12 14:07:18,771 - INFO - The Value at Risk (VaR) for SPY at 95.0% confidence level is -1.28%
+2024-11-12 14:07:19,199 - INFO - The Value at Risk (VaR) for TSLA at 95.0% confidence level is -4.30%
+2024-11-12 14:07:19,200 - INFO - The Value at Risk (VaR) for BND at 95.0% confidence level is -0.40%
+2024-11-12 14:07:19,201 - INFO - The Value at Risk (VaR) for SPY at 95.0% confidence level is -1.28%
+2024-11-12 14:07:21,261 - INFO - The Sharpe Ratio for TSLA is -0.31
+2024-11-12 14:07:21,262 - INFO - The Sharpe Ratio for BND is -3.08
+2024-11-12 14:07:21,263 - INFO - The Sharpe Ratio for SPY is -1.14
+2024-11-12 14:15:42,617 - INFO - Loading data for TSLA from 2015-01-01 to 2024-10-31
+2024-11-12 14:15:44,402 - INFO - Data for TSLA loaded successfully.
+2024-11-12 14:15:44,402 - INFO - Loading data for BND from 2015-01-01 to 2024-10-31
+2024-11-12 14:15:44,815 - INFO - Data for BND loaded successfully.
+2024-11-12 14:15:44,815 - INFO - Loading data for SPY from 2015-01-01 to 2024-10-31
+2024-11-12 14:15:45,247 - INFO - Data for SPY loaded successfully.
+2024-11-12 14:15:45,259 - INFO - DataFrame for TSLA before saving:
+2024-11-12 14:15:45,260 - INFO -                                 Open       High        Low      Close  \
+Date                                                                    
+2015-01-02 00:00:00+00:00  14.620667  14.620667  14.883333  14.217333   
+2015-01-05 00:00:00+00:00  14.006000  14.006000  14.433333  13.810667   
+2015-01-06 00:00:00+00:00  14.085333  14.085333  14.280000  13.614000   
+2015-01-07 00:00:00+00:00  14.063333  14.063333  14.318667  13.985333   
+2015-01-08 00:00:00+00:00  14.041333  14.041333  14.253333  14.000667   
+
+                           Adj Close    Volume  
+Date                                            
+2015-01-02 00:00:00+00:00  14.858000  71466000  
+2015-01-05 00:00:00+00:00  14.303333  80527500  
+2015-01-06 00:00:00+00:00  14.004000  93928500  
+2015-01-07 00:00:00+00:00  14.223333  44526000  
+2015-01-08 00:00:00+00:00  14.187333  51637500  
+2024-11-12 14:15:45,319 - INFO - Data for TSLA saved to ../data/raw\TSLA.csv
+2024-11-12 14:15:45,330 - INFO - DataFrame for BND before saving:
+2024-11-12 14:15:45,330 - INFO -                                 Open       High        Low      Close  \
+Date                                                                    
+2015-01-02 00:00:00+00:00  63.358768  82.650002  82.690002  82.419998   
+2015-01-05 00:00:00+00:00  63.542702  82.889999  82.919998  82.699997   
+2015-01-06 00:00:00+00:00  63.726707  83.129997  83.379997  83.029999   
+2015-01-07 00:00:00+00:00  63.765072  83.180000  83.279999  83.050003   
+2015-01-08 00:00:00+00:00  63.665390  83.050003  83.110001  82.970001   
+
+                           Adj Close   Volume  
+Date                                           
+2015-01-02 00:00:00+00:00  82.430000  2218800  
+2015-01-05 00:00:00+00:00  82.739998  5820100  
+2015-01-06 00:00:00+00:00  83.029999  3887600  
+2015-01-07 00:00:00+00:00  83.139999  2433400  
+2015-01-08 00:00:00+00:00  83.110001  1873400  
+2024-11-12 14:15:45,373 - INFO - Data for BND saved to ../data/raw\BND.csv
+2024-11-12 14:15:45,382 - INFO - DataFrame for SPY before saving:
+2024-11-12 14:15:45,382 - INFO -                                  Open        High         Low       Close  \
+Date                                                                        
+2015-01-02 00:00:00+00:00  173.173752  205.429993  206.880005  204.179993   
+2015-01-05 00:00:00+00:00  170.046341  201.720001  204.369995  201.350006   
+2015-01-06 00:00:00+00:00  168.444626  199.820007  202.720001  198.860001   
+2015-01-07 00:00:00+00:00  170.543655  202.309998  202.720001  200.880005   
+2015-01-08 00:00:00+00:00  173.569977  205.899994  206.160004  203.990005   
+
+                            Adj Close     Volume  
+Date                                              
+2015-01-02 00:00:00+00:00  206.380005  121465900  
+2015-01-05 00:00:00+00:00  204.169998  169632600  
+2015-01-06 00:00:00+00:00  202.089996  209151400  
+2015-01-07 00:00:00+00:00  201.419998  125346700  
+2015-01-08 00:00:00+00:00  204.009995  147217800  
+2024-11-12 14:15:45,413 - INFO - Data for SPY saved to ../data/raw\SPY.csv
+2024-11-12 14:15:45,441 - INFO - Checking missing values for TSLA
+2024-11-12 14:15:45,442 - INFO - Missing values for TSLA: Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+2024-11-12 14:15:45,446 - INFO - Data has been sorted in ascending order.
+2024-11-12 14:15:45,446 - INFO - Checking missing values for BND
+2024-11-12 14:15:45,446 - INFO - Missing values for BND: Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+2024-11-12 14:15:45,465 - INFO - Data has been sorted in ascending order.
+2024-11-12 14:15:45,465 - INFO - Checking missing values for SPY
+2024-11-12 14:15:45,465 - INFO - Missing values for SPY: Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+2024-11-12 14:15:45,475 - INFO - Data has been sorted in ascending order.
+2024-11-12 14:15:45,475 - INFO - Data cleaning completed.
+2024-11-12 14:15:45,488 - INFO - DataFrame for cleaned TSLA before saving:
+2024-11-12 14:15:45,488 - INFO -                                 Open       High        Low      Close  \
+Date                                                                    
+2015-01-02 00:00:00+00:00  14.620667  14.620667  14.883333  14.217333   
+2015-01-03 00:00:00+00:00  14.620667  14.620667  14.883333  14.217333   
+2015-01-04 00:00:00+00:00  14.620667  14.620667  14.883333  14.217333   
+2015-01-05 00:00:00+00:00  14.006000  14.006000  14.433333  13.810667   
+2015-01-06 00:00:00+00:00  14.085333  14.085333  14.280000  13.614000   
+
+                           Adj Close    Volume  
+Date                                            
+2015-01-02 00:00:00+00:00  14.858000  71466000  
+2015-01-03 00:00:00+00:00  14.858000  71466000  
+2015-01-04 00:00:00+00:00  14.858000  71466000  
+2015-01-05 00:00:00+00:00  14.303333  80527500  
+2015-01-06 00:00:00+00:00  14.004000  93928500  
+2024-11-12 14:15:45,560 - INFO - Cleaned data for TSLA saved to ../data/cleaned\cleaned_TSLA.csv
+2024-11-12 14:15:45,563 - INFO - DataFrame for cleaned BND before saving:
+2024-11-12 14:15:45,563 - INFO -                                 Open       High        Low      Close  \
+Date                                                                    
+2015-01-02 00:00:00+00:00  63.358768  82.650002  82.690002  82.419998   
+2015-01-03 00:00:00+00:00  63.358768  82.650002  82.690002  82.419998   
+2015-01-04 00:00:00+00:00  63.358768  82.650002  82.690002  82.419998   
+2015-01-05 00:00:00+00:00  63.542702  82.889999  82.919998  82.699997   
+2015-01-06 00:00:00+00:00  63.726707  83.129997  83.379997  83.029999   
+
+                           Adj Close   Volume  
+Date                                           
+2015-01-02 00:00:00+00:00  82.430000  2218800  
+2015-01-03 00:00:00+00:00  82.430000  2218800  
+2015-01-04 00:00:00+00:00  82.430000  2218800  
+2015-01-05 00:00:00+00:00  82.739998  5820100  
+2015-01-06 00:00:00+00:00  83.029999  3887600  
+2024-11-12 14:15:45,619 - INFO - Cleaned data for BND saved to ../data/cleaned\cleaned_BND.csv
+2024-11-12 14:15:45,628 - INFO - DataFrame for cleaned SPY before saving:
+2024-11-12 14:15:45,629 - INFO -                                  Open        High         Low       Close  \
+Date                                                                        
+2015-01-02 00:00:00+00:00  173.173752  205.429993  206.880005  204.179993   
+2015-01-03 00:00:00+00:00  173.173752  205.429993  206.880005  204.179993   
+2015-01-04 00:00:00+00:00  173.173752  205.429993  206.880005  204.179993   
+2015-01-05 00:00:00+00:00  170.046341  201.720001  204.369995  201.350006   
+2015-01-06 00:00:00+00:00  168.444626  199.820007  202.720001  198.860001   
+
+                            Adj Close     Volume  
+Date                                              
+2015-01-02 00:00:00+00:00  206.380005  121465900  
+2015-01-03 00:00:00+00:00  206.380005  121465900  
+2015-01-04 00:00:00+00:00  206.380005  121465900  
+2015-01-05 00:00:00+00:00  204.169998  169632600  
+2015-01-06 00:00:00+00:00  202.089996  209151400  
+2024-11-12 14:15:45,685 - INFO - Cleaned data for SPY saved to ../data/cleaned\cleaned_SPY.csv
+2024-11-12 14:16:04,185 - INFO - The Value at Risk (VaR) for TSLA at 95.0% confidence level is -4.30%
+2024-11-12 14:16:04,185 - INFO - The Value at Risk (VaR) for BND at 95.0% confidence level is -0.40%
+2024-11-12 14:16:04,185 - INFO - The Value at Risk (VaR) for SPY at 95.0% confidence level is -1.28%
+2024-11-12 14:16:04,203 - INFO - The Sharpe Ratio for TSLA is -0.31
+2024-11-12 14:16:04,204 - INFO - The Sharpe Ratio for BND is -3.09
+2024-11-12 14:16:04,204 - INFO - The Sharpe Ratio for SPY is -1.14
+2024-11-12 14:29:29,209 - INFO - Loading data for TSLA from 2015-01-01 to 2024-10-31
+2024-11-12 14:29:29,266 - INFO - Data for TSLA loaded successfully.
+2024-11-12 14:29:29,266 - INFO - Loading data for BND from 2015-01-01 to 2024-10-31
+2024-11-12 14:29:29,322 - INFO - Data for BND loaded successfully.
+2024-11-12 14:29:29,322 - INFO - Loading data for SPY from 2015-01-01 to 2024-10-31
+2024-11-12 14:29:29,366 - INFO - Data for SPY loaded successfully.
+2024-11-12 14:29:31,246 - INFO - DataFrame for TSLA before saving:
+2024-11-12 14:29:31,246 - INFO -                                 Open       High        Low      Close  \
+Date                                                                    
+2015-01-02 00:00:00+00:00  14.620667  14.620667  14.883333  14.217333   
+2015-01-05 00:00:00+00:00  14.006000  14.006000  14.433333  13.810667   
+2015-01-06 00:00:00+00:00  14.085333  14.085333  14.280000  13.614000   
+2015-01-07 00:00:00+00:00  14.063333  14.063333  14.318667  13.985333   
+2015-01-08 00:00:00+00:00  14.041333  14.041333  14.253333  14.000667   
+
+                           Adj Close    Volume  
+Date                                            
+2015-01-02 00:00:00+00:00  14.858000  71466000  
+2015-01-05 00:00:00+00:00  14.303333  80527500  
+2015-01-06 00:00:00+00:00  14.004000  93928500  
+2015-01-07 00:00:00+00:00  14.223333  44526000  
+2015-01-08 00:00:00+00:00  14.187333  51637500  
+2024-11-12 14:29:31,287 - INFO - Data for TSLA saved to ../data/raw\TSLA.csv
+2024-11-12 14:29:31,294 - INFO - DataFrame for BND before saving:
+2024-11-12 14:29:31,294 - INFO -                                 Open       High        Low      Close  \
+Date                                                                    
+2015-01-02 00:00:00+00:00  63.358768  82.650002  82.690002  82.419998   
+2015-01-05 00:00:00+00:00  63.542702  82.889999  82.919998  82.699997   
+2015-01-06 00:00:00+00:00  63.726707  83.129997  83.379997  83.029999   
+2015-01-07 00:00:00+00:00  63.765072  83.180000  83.279999  83.050003   
+2015-01-08 00:00:00+00:00  63.665390  83.050003  83.110001  82.970001   
+
+                           Adj Close   Volume  
+Date                                           
+2015-01-02 00:00:00+00:00  82.430000  2218800  
+2015-01-05 00:00:00+00:00  82.739998  5820100  
+2015-01-06 00:00:00+00:00  83.029999  3887600  
+2015-01-07 00:00:00+00:00  83.139999  2433400  
+2015-01-08 00:00:00+00:00  83.110001  1873400  
+2024-11-12 14:29:31,326 - INFO - Data for BND saved to ../data/raw\BND.csv
+2024-11-12 14:29:31,334 - INFO - DataFrame for SPY before saving:
+2024-11-12 14:29:31,334 - INFO -                                  Open        High         Low       Close  \
+Date                                                                        
+2015-01-02 00:00:00+00:00  173.173752  205.429993  206.880005  204.179993   
+2015-01-05 00:00:00+00:00  170.046341  201.720001  204.369995  201.350006   
+2015-01-06 00:00:00+00:00  168.444626  199.820007  202.720001  198.860001   
+2015-01-07 00:00:00+00:00  170.543655  202.309998  202.720001  200.880005   
+2015-01-08 00:00:00+00:00  173.569977  205.899994  206.160004  203.990005   
+
+                            Adj Close     Volume  
+Date                                              
+2015-01-02 00:00:00+00:00  206.380005  121465900  
+2015-01-05 00:00:00+00:00  204.169998  169632600  
+2015-01-06 00:00:00+00:00  202.089996  209151400  
+2015-01-07 00:00:00+00:00  201.419998  125346700  
+2015-01-08 00:00:00+00:00  204.009995  147217800  
+2024-11-12 14:29:31,365 - INFO - Data for SPY saved to ../data/raw\SPY.csv
+2024-11-12 14:29:36,771 - INFO - Checking missing values for TSLA
+2024-11-12 14:29:36,771 - INFO - Missing values for TSLA: Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+2024-11-12 14:29:36,776 - INFO - Data has been sorted in ascending order.
+2024-11-12 14:29:36,776 - INFO - Checking missing values for BND
+2024-11-12 14:29:36,776 - INFO - Missing values for BND: Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+2024-11-12 14:29:36,783 - INFO - Data has been sorted in ascending order.
+2024-11-12 14:29:36,783 - INFO - Checking missing values for SPY
+2024-11-12 14:29:36,784 - INFO - Missing values for SPY: Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+2024-11-12 14:29:36,787 - INFO - Data has been sorted in ascending order.
+2024-11-12 14:29:36,787 - INFO - Data cleaning completed.
+2024-11-12 14:29:38,166 - INFO - DataFrame for cleaned TSLA before saving:
+2024-11-12 14:29:38,167 - INFO -                                 Open       High        Low      Close  \
+Date                                                                    
+2015-01-02 00:00:00+00:00  14.620667  14.620667  14.883333  14.217333   
+2015-01-05 00:00:00+00:00  14.006000  14.006000  14.433333  13.810667   
+2015-01-06 00:00:00+00:00  14.085333  14.085333  14.280000  13.614000   
+2015-01-07 00:00:00+00:00  14.063333  14.063333  14.318667  13.985333   
+2015-01-08 00:00:00+00:00  14.041333  14.041333  14.253333  14.000667   
+
+                           Adj Close    Volume  
+Date                                            
+2015-01-02 00:00:00+00:00  14.858000  71466000  
+2015-01-05 00:00:00+00:00  14.303333  80527500  
+2015-01-06 00:00:00+00:00  14.004000  93928500  
+2015-01-07 00:00:00+00:00  14.223333  44526000  
+2015-01-08 00:00:00+00:00  14.187333  51637500  
+2024-11-12 14:29:38,210 - INFO - Cleaned data for TSLA saved to ../data/cleaned\cleaned_TSLA.csv
+2024-11-12 14:29:38,213 - INFO - DataFrame for cleaned BND before saving:
+2024-11-12 14:29:38,213 - INFO -                                 Open       High        Low      Close  \
+Date                                                                    
+2015-01-02 00:00:00+00:00  63.358768  82.650002  82.690002  82.419998   
+2015-01-05 00:00:00+00:00  63.542702  82.889999  82.919998  82.699997   
+2015-01-06 00:00:00+00:00  63.726707  83.129997  83.379997  83.029999   
+2015-01-07 00:00:00+00:00  63.765072  83.180000  83.279999  83.050003   
+2015-01-08 00:00:00+00:00  63.665390  83.050003  83.110001  82.970001   
+
+                           Adj Close   Volume  
+Date                                           
+2015-01-02 00:00:00+00:00  82.430000  2218800  
+2015-01-05 00:00:00+00:00  82.739998  5820100  
+2015-01-06 00:00:00+00:00  83.029999  3887600  
+2015-01-07 00:00:00+00:00  83.139999  2433400  
+2015-01-08 00:00:00+00:00  83.110001  1873400  
+2024-11-12 14:29:38,247 - INFO - Cleaned data for BND saved to ../data/cleaned\cleaned_BND.csv
+2024-11-12 14:29:38,247 - INFO - DataFrame for cleaned SPY before saving:
+2024-11-12 14:29:38,247 - INFO -                                  Open        High         Low       Close  \
+Date                                                                        
+2015-01-02 00:00:00+00:00  173.173752  205.429993  206.880005  204.179993   
+2015-01-05 00:00:00+00:00  170.046341  201.720001  204.369995  201.350006   
+2015-01-06 00:00:00+00:00  168.444626  199.820007  202.720001  198.860001   
+2015-01-07 00:00:00+00:00  170.543655  202.309998  202.720001  200.880005   
+2015-01-08 00:00:00+00:00  173.569977  205.899994  206.160004  203.990005   
+
+                            Adj Close     Volume  
+Date                                              
+2015-01-02 00:00:00+00:00  206.380005  121465900  
+2015-01-05 00:00:00+00:00  204.169998  169632600  
+2015-01-06 00:00:00+00:00  202.089996  209151400  
+2015-01-07 00:00:00+00:00  201.419998  125346700  
+2015-01-08 00:00:00+00:00  204.009995  147217800  
+2024-11-12 14:29:38,283 - INFO - Cleaned data for SPY saved to ../data/cleaned\cleaned_SPY.csv
+2024-11-12 14:30:27,061 - INFO - Loading data for TSLA from 2015-01-01 to 2024-10-31
+2024-11-12 14:30:28,640 - INFO - Data for TSLA loaded successfully.
+2024-11-12 14:30:28,640 - INFO - Loading data for BND from 2015-01-01 to 2024-10-31
+2024-11-12 14:30:29,132 - INFO - Data for BND loaded successfully.
+2024-11-12 14:30:29,132 - INFO - Loading data for SPY from 2015-01-01 to 2024-10-31
+2024-11-12 14:30:29,896 - INFO - Data for SPY loaded successfully.
+2024-11-12 14:30:29,911 - INFO - DataFrame for TSLA before saving:
+2024-11-12 14:30:29,911 - INFO -                                 Open       High        Low      Close  \
+Date                                                                    
+2015-01-02 00:00:00+00:00  14.620667  14.620667  14.883333  14.217333   
+2015-01-05 00:00:00+00:00  14.006000  14.006000  14.433333  13.810667   
+2015-01-06 00:00:00+00:00  14.085333  14.085333  14.280000  13.614000   
+2015-01-07 00:00:00+00:00  14.063333  14.063333  14.318667  13.985333   
+2015-01-08 00:00:00+00:00  14.041333  14.041333  14.253333  14.000667   
+
+                           Adj Close    Volume  
+Date                                            
+2015-01-02 00:00:00+00:00  14.858000  71466000  
+2015-01-05 00:00:00+00:00  14.303333  80527500  
+2015-01-06 00:00:00+00:00  14.004000  93928500  
+2015-01-07 00:00:00+00:00  14.223333  44526000  
+2015-01-08 00:00:00+00:00  14.187333  51637500  
+2024-11-12 14:30:29,967 - INFO - Data for TSLA saved to ../data/raw\TSLA.csv
+2024-11-12 14:30:29,972 - INFO - DataFrame for BND before saving:
+2024-11-12 14:30:29,972 - INFO -                                 Open       High        Low      Close  \
+Date                                                                    
+2015-01-02 00:00:00+00:00  63.358746  82.650002  82.690002  82.419998   
+2015-01-05 00:00:00+00:00  63.542736  82.889999  82.919998  82.699997   
+2015-01-06 00:00:00+00:00  63.726715  83.129997  83.379997  83.029999   
+2015-01-07 00:00:00+00:00  63.765091  83.180000  83.279999  83.050003   
+2015-01-08 00:00:00+00:00  63.665413  83.050003  83.110001  82.970001   
+
+                           Adj Close   Volume  
+Date                                           
+2015-01-02 00:00:00+00:00  82.430000  2218800  
+2015-01-05 00:00:00+00:00  82.739998  5820100  
+2015-01-06 00:00:00+00:00  83.029999  3887600  
+2015-01-07 00:00:00+00:00  83.139999  2433400  
+2015-01-08 00:00:00+00:00  83.110001  1873400  
+2024-11-12 14:30:30,011 - INFO - Data for BND saved to ../data/raw\BND.csv
+2024-11-12 14:30:30,016 - INFO - DataFrame for SPY before saving:
+2024-11-12 14:30:30,016 - INFO -                                  Open        High         Low       Close  \
+Date                                                                        
+2015-01-02 00:00:00+00:00  173.173752  205.429993  206.880005  204.179993   
+2015-01-05 00:00:00+00:00  170.046310  201.720001  204.369995  201.350006   
+2015-01-06 00:00:00+00:00  168.444626  199.820007  202.720001  198.860001   
+2015-01-07 00:00:00+00:00  170.543640  202.309998  202.720001  200.880005   
+2015-01-08 00:00:00+00:00  173.569946  205.899994  206.160004  203.990005   
+
+                            Adj Close     Volume  
+Date                                              
+2015-01-02 00:00:00+00:00  206.380005  121465900  
+2015-01-05 00:00:00+00:00  204.169998  169632600  
+2015-01-06 00:00:00+00:00  202.089996  209151400  
+2015-01-07 00:00:00+00:00  201.419998  125346700  
+2015-01-08 00:00:00+00:00  204.009995  147217800  
+2024-11-12 14:30:30,048 - INFO - Data for SPY saved to ../data/raw\SPY.csv
+2024-11-12 14:30:30,068 - INFO - Checking missing values for TSLA
+2024-11-12 14:30:30,071 - INFO - Missing values for TSLA: Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+2024-11-12 14:30:30,079 - INFO - Data has been sorted in ascending order.
+2024-11-12 14:30:30,079 - INFO - Checking missing values for BND
+2024-11-12 14:30:30,080 - INFO - Missing values for BND: Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+2024-11-12 14:30:30,087 - INFO - Data has been sorted in ascending order.
+2024-11-12 14:30:30,087 - INFO - Checking missing values for SPY
+2024-11-12 14:30:30,087 - INFO - Missing values for SPY: Open         0
+High         0
+Low          0
+Close        0
+Adj Close    0
+Volume       0
+dtype: int64
+2024-11-12 14:30:30,097 - INFO - Data has been sorted in ascending order.
+2024-11-12 14:30:30,097 - INFO - Data cleaning completed.
+2024-11-12 14:30:30,158 - INFO - DataFrame for cleaned TSLA before saving:
+2024-11-12 14:30:30,158 - INFO -                                 Open       High        Low      Close  \
+Date                                                                    
+2015-01-02 00:00:00+00:00  14.620667  14.620667  14.883333  14.217333   
+2015-01-05 00:00:00+00:00  14.006000  14.006000  14.433333  13.810667   
+2015-01-06 00:00:00+00:00  14.085333  14.085333  14.280000  13.614000   
+2015-01-07 00:00:00+00:00  14.063333  14.063333  14.318667  13.985333   
+2015-01-08 00:00:00+00:00  14.041333  14.041333  14.253333  14.000667   
+
+                           Adj Close    Volume  
+Date                                            
+2015-01-02 00:00:00+00:00  14.858000  71466000  
+2015-01-05 00:00:00+00:00  14.303333  80527500  
+2015-01-06 00:00:00+00:00  14.004000  93928500  
+2015-01-07 00:00:00+00:00  14.223333  44526000  
+2015-01-08 00:00:00+00:00  14.187333  51637500  
+2024-11-12 14:30:30,211 - INFO - Cleaned data for TSLA saved to ../data/cleaned\cleaned_TSLA.csv
+2024-11-12 14:30:30,217 - INFO - DataFrame for cleaned BND before saving:
+2024-11-12 14:30:30,217 - INFO -                                 Open       High        Low      Close  \
+Date                                                                    
+2015-01-02 00:00:00+00:00  63.358746  82.650002  82.690002  82.419998   
+2015-01-05 00:00:00+00:00  63.542736  82.889999  82.919998  82.699997   
+2015-01-06 00:00:00+00:00  63.726715  83.129997  83.379997  83.029999   
+2015-01-07 00:00:00+00:00  63.765091  83.180000  83.279999  83.050003   
+2015-01-08 00:00:00+00:00  63.665413  83.050003  83.110001  82.970001   
+
+                           Adj Close   Volume  
+Date                                           
+2015-01-02 00:00:00+00:00  82.430000  2218800  
+2015-01-05 00:00:00+00:00  82.739998  5820100  
+2015-01-06 00:00:00+00:00  83.029999  3887600  
+2015-01-07 00:00:00+00:00  83.139999  2433400  
+2015-01-08 00:00:00+00:00  83.110001  1873400  
+2024-11-12 14:30:30,249 - INFO - Cleaned data for BND saved to ../data/cleaned\cleaned_BND.csv
+2024-11-12 14:30:30,253 - INFO - DataFrame for cleaned SPY before saving:
+2024-11-12 14:30:30,253 - INFO -                                  Open        High         Low       Close  \
+Date                                                                        
+2015-01-02 00:00:00+00:00  173.173752  205.429993  206.880005  204.179993   
+2015-01-05 00:00:00+00:00  170.046310  201.720001  204.369995  201.350006   
+2015-01-06 00:00:00+00:00  168.444626  199.820007  202.720001  198.860001   
+2015-01-07 00:00:00+00:00  170.543640  202.309998  202.720001  200.880005   
+2015-01-08 00:00:00+00:00  173.569946  205.899994  206.160004  203.990005   
+
+                            Adj Close     Volume  
+Date                                              
+2015-01-02 00:00:00+00:00  206.380005  121465900  
+2015-01-05 00:00:00+00:00  204.169998  169632600  
+2015-01-06 00:00:00+00:00  202.089996  209151400  
+2015-01-07 00:00:00+00:00  201.419998  125346700  
+2015-01-08 00:00:00+00:00  204.009995  147217800  
+2024-11-12 14:30:30,287 - INFO - Cleaned data for SPY saved to ../data/cleaned\cleaned_SPY.csv
+2024-11-12 14:30:47,246 - INFO - The Value at Risk (VaR) for TSLA at 95.0% confidence level is -5.08%
+2024-11-12 14:30:47,248 - INFO - The Value at Risk (VaR) for BND at 95.0% confidence level is -0.47%
+2024-11-12 14:30:47,249 - INFO - The Value at Risk (VaR) for SPY at 95.0% confidence level is -1.55%
+2024-11-12 14:30:47,264 - INFO - The Sharpe Ratio for TSLA is -0.24
+2024-11-12 14:30:47,265 - INFO - The Sharpe Ratio for BND is -2.57
+2024-11-12 14:30:47,265 - INFO - The Sharpe Ratio for SPY is -0.94

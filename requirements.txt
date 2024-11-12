@@ -1,7 +1,6 @@
 yfinance
 pandas 
-matplotlib.pyplot
+matplotlib
 seaborn
-unittest
 mplfinance
-statsmodel
+statsmodels

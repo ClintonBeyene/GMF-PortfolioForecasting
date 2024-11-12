@@ -14,11 +14,12 @@ logging.basicConfig(
 )
 
 class StockDataLoader:
-    def __init__(self, tickers, start_date, end_date, data_folder='../data'):
+    def __init__(self, tickers, start_date, end_date, data_folder='../data/raw', cleaned_data='../data/cleaned'):
         self.tickers = tickers
         self.start_date = start_date
         self.end_date = end_date
         self.data_folder = data_folder
+        self.cleaned_data = cleaned_data
         self.data = {}
 
     def load_data(self):
@@ -76,40 +77,52 @@ class StockDataLoader:
             print("Shape:")
             print(df.shape)
 
-    def clean_data(self):
-        """Clean the loaded stock data by handling missing values and converting types."""
+    def preprocessing_data(self, fill_method='ffill'):
+        """Preprocess the loaded stock data by handling missing values, converting types and preprocessing."""
         for ticker in self.data:
             df = self.data[ticker]
             logging.info(f'Checking missing values for {ticker}')
+            
+            if df.empty:
+                logging.warning(f'DataFrame for {ticker} is empty.')
+                continue
+
             missing_values = df.isnull().sum()
             logging.info(f'Missing values for {ticker}: {missing_values}')
-            
-            # Ensure the DataFrame is not empty and contains the expected columns
-            if not df.empty:
-                numeric_columns = ['Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume']
-                for col in numeric_columns:
-                    if col in df.columns:
-                        df[col] = pd.to_numeric(df[col], errors='coerce')
-                    else:
-                        logging.warning(f'Column {col} not found in {ticker} DataFrame.')
-            
-                # Fill missing values
-                df.fillna(method='ffill', inplace=True)  # Forward fill
-                df.index.name = 'Date'
-                self.data[ticker] = df
-            else:
-                logging.warning(f'DataFrame for {ticker} is empty.')
-        
+
+            numeric_columns = ['Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume']
+            for col in numeric_columns:
+                if col in df.columns:
+                    df[col] = pd.to_numeric(df[col], errors='coerce')
+
+            # Fill missing values based on the specified method
+            if fill_method == 'ffill':
+                df.fillna(method='ffill', inplace=True)
+            elif fill_method == 'bfill':
+                df.fillna(method='bfill', inplace=True)
+            elif fill_method == 'interpolate':
+                df.interpolate(inplace=True)
+
+            df.index.name = 'Date'
+            df.index = pd.to_datetime(df.index)
+            # df = df.resample('D').ffill().dropna()
+
+            # Sort the DataFrame by index (date) after resampling
+            df = df.sort_index(ascending=True)
+            logging.info("Data has been sorted in ascending order.")
+
+            self.data[ticker] = df
+
         logging.info('Data cleaning completed.')
         return self.data
-
-    def save_cleaned_data_to_csv(self):
+    
+    def save_preprocessed_data_to_csv(self):
         """Save cleaned stock data to CSV files in the specified folder."""
-        if not os.path.exists(self.data_folder):
-            os.makedirs(self.data_folder)
+        if not os.path.exists(self.cleaned_data):
+            os.makedirs(self.cleaned_data)
         
         for ticker, df in self.data.items():
-            file_path = os.path.join(self.data_folder, f"cleaned_{ticker}.csv")
+            file_path = os.path.join(self.cleaned_data, f"cleaned_{ticker}.csv")
             
             # Log the cleaned DataFrame structure before saving
             logging.info(f'DataFrame for cleaned {ticker} before saving:')
@@ -122,8 +135,8 @@ class StockDataLoader:
             # Show cleaned DataFrame head, info, and shape
             print(f"\nCleaned Data for {ticker}:")
             print("Head:")
-            print(df.head())
+            df.head()
             print("Info:")
-            print(df.info())
+            df.info()
             print("Shape:")
             print(df.shape)
