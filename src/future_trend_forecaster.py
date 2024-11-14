@@ -34,11 +34,8 @@ class ForecastFutureMarketTrends:
             else:
                 raise ValueError("Forecasted data must be a file path or a DataFrame")
             
-            # if not isinstance(self.historical_data, pd.DataFrame):
-                raise ValueError("Historical data must be a DataFrame")
-            
-            
-            # self.historical_data = self.historical_data[self.column]
+            if self.column not in self.historical_data.columns:
+                raise ValueError(f"Column '{self.column}' not found in historical data")
 
             if 'Forecast' not in self.forecasted_data.columns:
                 raise ValueError("Forecast CSV must have a 'Forecast' column.")
