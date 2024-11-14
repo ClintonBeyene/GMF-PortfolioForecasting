@@ -37,8 +37,6 @@ class ForecastFutureMarketTrends:
             # if not isinstance(self.historical_data, pd.DataFrame):
                 raise ValueError("Historical data must be a DataFrame")
             
-            if self.column not in self.historical_data.columns:
-                raise ValueError(f"Column '{self.column}' not found in historical data")
             
             # self.historical_data = self.historical_data[self.column]
 
